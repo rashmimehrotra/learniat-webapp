@@ -1,0 +1,4 @@
+ERROR - 2016-01-22 05:52:21 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12
+ERROR - 2016-01-22 09:14:01 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12
+ERROR - 2016-01-22 09:14:01 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12
+ERROR - 2016-01-22 10:10:38 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12

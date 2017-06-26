@@ -1,0 +1,562 @@
+ERROR - 2017-06-22 11:17:02 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT a.answer_score
+            FROM student_class_map as map
+            INNER JOIN tbl_auth AS user ON user.user_id = map.student_id
+            INNER JOIN class_sessions as session on map.class_id = session.class_id
+            INNER JOIN question_log as ql on ql.class_session_id = session.class_session_id
+            INNER JOIN questions AS q ON q.question_id = ql.question_id
+            INNER JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id AND a.student_id = map.student_id
+            WHERE q.question_id = 2
+            GROUP BY map.student_id
+ERROR - 2017-06-22 11:17:07 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT a.answer_score
+            FROM student_class_map as map
+            INNER JOIN tbl_auth AS user ON user.user_id = map.student_id
+            INNER JOIN class_sessions as session on map.class_id = session.class_id
+            INNER JOIN question_log as ql on ql.class_session_id = session.class_session_id
+            INNER JOIN questions AS q ON q.question_id = ql.question_id
+            INNER JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id AND a.student_id = map.student_id
+            WHERE q.question_id = 2
+            GROUP BY map.student_id
+ERROR - 2017-06-22 11:17:28 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 528
+		WHERE 1  AND ql.class_session_id = 3747   GROUP BY ql.question_id
+ERROR - 2017-06-22 11:18:01 --> Severity: Notice --> Undefined index: class_name /var/www/learniat/application/views/session/details.php 32
+ERROR - 2017-06-22 11:18:01 --> Severity: Notice --> Undefined index: start_time /var/www/learniat/application/views/session/helper/session-information.php 4
+ERROR - 2017-06-22 11:18:01 --> Severity: Notice --> Undefined index: end_time /var/www/learniat/application/views/session/helper/session-information.php 4
+ERROR - 2017-06-22 11:18:01 --> Severity: Notice --> Undefined index: room_name /var/www/learniat/application/views/session/helper/session-information.php 5
+ERROR - 2017-06-22 11:18:01 --> Severity: Notice --> Undefined index: students_present /var/www/learniat/application/views/session/helper/session-information.php 6
+ERROR - 2017-06-22 11:18:01 --> Severity: Notice --> Undefined index: total_students /var/www/learniat/application/views/session/helper/session-information.php 6
+ERROR - 2017-06-22 11:18:01 --> Severity: Notice --> Undefined index: students_present /var/www/learniat/application/views/session/helper/session-information.php 9
+ERROR - 2017-06-22 11:18:01 --> Severity: Notice --> Undefined index: students_present /var/www/learniat/application/views/session/helper/session-information.php 20
+ERROR - 2017-06-22 11:18:01 --> Severity: Notice --> Undefined index: total_students /var/www/learniat/application/views/session/helper/session-information.php 21
+ERROR - 2017-06-22 11:18:44 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 532
+		WHERE 1  AND ql.class_session_id = 1500   GROUP BY ql.question_id
+ERROR - 2017-06-22 11:19:05 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 528
+		WHERE 1  AND ql.class_session_id = 1769   GROUP BY ql.question_id
+ERROR - 2017-06-22 11:19:11 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 533
+		WHERE 1  AND ql.class_session_id = 1768   GROUP BY ql.question_id
+ERROR - 2017-06-22 11:19:58 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:20:25 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:20:34 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:21:19 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 540
+		WHERE 1  AND ql.class_session_id = 3836   GROUP BY ql.question_id
+ERROR - 2017-06-22 11:25:09 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:25:12 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:26:58 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:30:31 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:36:33 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 540
+		WHERE 1  AND ql.class_session_id = 3836   GROUP BY ql.question_id
+ERROR - 2017-06-22 11:37:12 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 540
+		WHERE 1  AND ql.class_session_id = 3814   GROUP BY ql.question_id
+ERROR - 2017-06-22 11:37:23 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:37:29 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:37:32 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:57:36 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 11:59:51 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 12:09:51 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 12:09:58 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 12:12:37 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 12:12:44 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 12:12:52 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 540
+		WHERE 1  AND ql.class_session_id = 3816   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:23:40 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 12:28:22 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 533
+		WHERE 1  AND ql.class_session_id = 1768   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:28:30 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 528
+		WHERE 1  AND ql.class_session_id = 1769   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:28:33 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 528
+		WHERE 1  AND ql.class_session_id = 1769   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:28:40 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 533
+		WHERE 1  AND ql.class_session_id = 1768   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:30:34 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 540
+		WHERE 1  AND ql.class_session_id = 3816   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:30:48 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 529
+		WHERE 1  AND ql.class_session_id = 3827   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:32:11 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 12:36:10 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 533
+		WHERE 1  AND ql.class_session_id = 1768   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:36:36 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 540
+		WHERE 1  AND ql.class_session_id = 3836   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:36:50 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 529
+		WHERE 1  AND ql.class_session_id = 3826   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:37:31 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 545
+		WHERE 1  AND ql.class_session_id = 3813   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:37:42 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 540
+		WHERE 1  AND ql.class_session_id = 3814   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:39:09 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 540
+		WHERE 1  AND ql.class_session_id = 3836   GROUP BY ql.question_id
+ERROR - 2017-06-22 12:49:04 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 12:49:05 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 12:57:45 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.a.answer_score' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT q.question_name, ql.question_id, a.answer_score, (a.answer_score * 100) AS answer_score_percent
+		FROM question_log AS ql
+		INNER JOIN questions AS q ON q.question_id = ql.question_id
+		LEFT JOIN assessment_answers AS a ON a.question_log_id = ql.question_log_id  AND a.student_id = 540
+		WHERE 1  AND ql.class_session_id = 3836   GROUP BY ql.question_id
+ERROR - 2017-06-22 13:13:14 --> Query error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'jupiter.cs.class_session_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT cs.class_session_id, c.class_name, c.class_id,
+    	cs.starts_on, cs.ends_on, sub.school_id
+    	FROM classes AS c
+    	INNER JOIN class_sessions AS cs on cs.teacher_id = c.teacher_id
+    	INNER JOIN subjects AS sub on sub.subject_id = c.subject_id
+    	WHERE c.teacher_id = 496
+    	GROUP BY c.class_id
+ERROR - 2017-06-22 13:24:54 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:24:54 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:24:54 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:24:54 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:24:54 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:24:54 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 13:24:54 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 13:25:23 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:25:23 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:25:23 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:25:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:25:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:25:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 13:25:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 13:26:31 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:26:31 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:26:31 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:26:31 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:26:31 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:26:31 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 13:26:31 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 13:30:10 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:30:10 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:30:10 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:30:10 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:30:10 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:30:10 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 13:30:10 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 13:30:14 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:30:14 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:30:14 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:30:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:30:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:30:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 13:30:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 13:37:12 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:37:12 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:37:12 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:37:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:37:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:37:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 13:37:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 13:37:17 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:37:17 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:37:17 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:37:17 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:37:17 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:37:17 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 13:37:17 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 13:37:20 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:37:20 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:37:20 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:37:20 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:37:20 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:37:20 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 13:37:20 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 13:40:53 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:40:53 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:40:53 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 13:40:53 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:40:53 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 13:40:53 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 13:40:53 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 14:51:01 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 14:51:01 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 14:51:01 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 14:51:01 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 14:51:01 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 14:51:01 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 14:51:01 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 14:59:48 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 14:59:48 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 14:59:48 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 14:59:48 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 14:59:48 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 14:59:48 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 14:59:48 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 15:08:34 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:08:34 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:08:34 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:08:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:08:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:08:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 15:08:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 15:24:48 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:24:48 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:24:48 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:24:48 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:24:48 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:24:48 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 15:24:48 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 15:25:00 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:00 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:00 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:25:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:25:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 15:25:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 15:25:01 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:01 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:01 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:01 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:25:01 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:25:01 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 15:25:01 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 15:25:09 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:09 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:09 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:25:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:25:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 15:25:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 15:25:14 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:14 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:14 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:25:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:25:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:25:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 15:25:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 15:42:41 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:42:41 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:42:41 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:42:41 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:42:41 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:42:41 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 15:42:41 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 15:42:42 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:42:42 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:42:42 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 15:42:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:42:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 15:42:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 15:42:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 17:26:00 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:26:00 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:26:00 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:26:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:26:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:26:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 17:26:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 17:26:09 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:26:09 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:26:09 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:26:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:26:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:26:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 17:26:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 17:32:21 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:32:21 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:32:21 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:32:21 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:32:21 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:32:21 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 17:32:21 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 17:32:27 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:32:27 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:32:27 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:32:27 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:32:27 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:32:27 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 17:32:27 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 17:32:30 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:32:30 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:32:30 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:32:30 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:32:30 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:32:30 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-22 17:32:30 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 17:33:55 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:33:55 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1&lt;Root&gt;&lt;Sun /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:33:55 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:33:55 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:33:55 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:33:55 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 17:33:55 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 17:48:49 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:48:49 --> Severity: Warning --> simplexml_load_string(): MySqlError - Incorrect integer value: '' for column 'user_id' at row 1RetrieveSt /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:48:49 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:48:49 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:48:49 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:48:49 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 17:48:49 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 17:54:47 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:54:47 --> Severity: Warning --> simplexml_load_string(): Array /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:54:47 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:54:47 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:54:47 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:54:47 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 17:54:47 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 17:55:06 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:55:06 --> Severity: Warning --> simplexml_load_string(): Array /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:55:06 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:55:06 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:55:06 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:55:06 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 17:55:06 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 17:58:07 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:58:07 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:58:07 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 17:58:07 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:58:07 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 17:58:07 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 17:58:07 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:00:18 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:00:18 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:00:18 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:00:18 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:00:18 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:00:18 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:00:18 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:04:44 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:04:44 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:04:44 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:04:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:04:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:04:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:04:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:06:00 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:06:00 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:06:00 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:06:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:06:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:06:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:06:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:07:38 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:07:38 --> Severity: Warning --> simplexml_load_string(): insert into event_log(service_name,user_id,UUID,xml_input,request_time) values(' /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:07:38 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-22 18:07:38 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:07:38 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:07:38 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:07:38 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:18:43 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:18:43 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:18:43 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:18:43 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:19:21 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:19:21 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:19:21 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:19:21 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:25:54 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:25:54 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:25:54 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:25:54 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:30:32 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:30:32 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:30:32 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:30:32 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:31:02 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:31:02 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:31:02 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:31:02 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:31:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:31:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:31:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:31:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:33:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:33:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:33:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:33:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:34:22 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:34:22 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:34:22 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:34:22 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:36:46 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:36:46 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:36:46 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:36:46 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:37:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:37:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:37:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:37:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:38:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:38:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:38:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:38:00 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:40:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:40:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:40:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:40:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-22 18:40:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:40:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-22 18:40:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 37
+ERROR - 2017-06-22 18:40:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9

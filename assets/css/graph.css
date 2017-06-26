@@ -1,0 +1,164 @@
+@CHARSET "ISO-8859-1";
+
+.titleBarParticipationIndexLineCopy {
+	height: 10px;
+	position: block;
+	width: 103%;
+}
+
+.averageText, .titleBarIndexText, .titlebarAverageText {
+	margin-top: -22px;
+	position: absolute;
+	font-family: "Open Sans",sans-serif;
+}
+.averageOverflowText {
+    margin-top: 15px;
+    position: absolute;
+}
+
+.averageText, .averageOverflowText {
+	font-size: 10px;
+	color: #016699;
+}
+
+.averageDiamond, .averageGraspDiamond {
+    height: 14px;
+    width: 14px;
+    margin-top:-4px;
+    position: absolute;
+}
+.averageDiamond {
+	background-image: url("../images/average-diamond.png");
+	background-repeat: no-repeat;
+}
+.averageGraspDiamond {
+	background-image: url("../images/average-diamond-grasp.png");
+	background-repeat: no-repeat;
+}
+
+.centerIndex {
+	width: 96%;
+	position: relative;
+	top: 10%;
+	left:2px;
+}
+
+.titleBarParticipationIndexLine, .titleBarGraspIndexLine {
+	height: 7px;
+	margin-top: 15px;
+	position: block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.titleBarParticipationIndexLine {
+	background: #cde0eb;
+}
+.titleBarGraspIndexLine {
+	background: #b8e2b5;
+}
+
+.participationPerson, .participationPersonOver {
+	position: absolute;
+	border-radius: 50%;
+	width: 7px;
+	height: 7px;
+}
+
+.participationPerson {
+	background-image: url(../images/student-average.png);
+	background-repeat: no-repeat;
+	margin-top: -1px;
+}
+
+.participationPersonOver {
+	background-image: url(../images/student-average-over.png);
+	background-repeat: no-repeat;
+	margin-top: -2px;
+}
+
+.containerAccordTitle {
+	display: table;
+	width: 99%;
+}
+
+.rowAccordTitle {
+	display: table-row;
+}
+
+.leftAccordTitle, .rightAccordTitle, .middleAccordTitle {
+	display: table-cell;
+}
+
+.leftAccordTitle {
+	vertical-align: middle;
+	width: 30%;
+}
+
+.middleAccordTitle {
+	padding-top: 1px;
+	width: 30%;
+}
+
+.rightAccordTitle {
+	width: 30%;
+	padding-top: 1px;
+	padding-left: 3%;
+}
+.graphContainer {
+	padding-top: 1px;
+	width: 94%;
+}
+
+.sessionPopDetails {
+    color: #016699;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.topic-bar-slider .prograss-bar-txt {
+    color: #777777;
+    float: left;
+    font-size: 11px;
+    padding: 4px 5px 0 0;
+}
+.titleBarIndexText {
+	font-family: 'Open Sans',sans-serif;
+    font-weight: normal;
+    color: #606060;
+    font-size: 12px;
+}
+.titlebarIndexHeadText {
+	font-family: "Open Sans",sans-serif;
+    font-weight: bold;
+	margin-top: -22px;
+	position: absolute;
+    float: left;
+    font-size: 11px;
+}
+.titlebarIndexNormalText {
+    font-family: "Open Sans",sans-serif;
+    margin-top: -22px;
+    position: absolute;
+    float: left;
+    font-size: 11px;
+}
+.titlebarIndexHeadTextRight {
+	font-family: "Open Sans",sans-serif;
+    font-weight: bold;
+	margin-top: -22px;
+    float: left;
+    font-size: 11px;
+}
+.titlebarIndexHeadNormalTextRight {
+	color: #606060;
+    font-family: "Open Sans",sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+.titlebarAverageText {
+    color: #777777;
+    font-size: 9px;
+}

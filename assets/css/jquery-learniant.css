@@ -1,0 +1,99 @@
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: #fece2f url("images/ui-bg_gloss-wave_60_fece2f_500x100.png") repeat-x scroll 20% 20%;
+    border: 1px solid #d19405;
+    color: #4c3000;
+    font-weight: bold;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: -0.6em;
+    top: 0.2em;
+}
+.ui-slider .ui-slider-handle {
+    cursor: default;
+    height: 0.2em;
+    position: absolute;
+    width: 0.2em;
+    z-index: 2;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.clear {
+    clear: both;
+}
+.wrapper-dropdown-5 {
+    cursor: pointer;
+    font-size: 11px;
+    margin: 0 auto;
+    outline: medium none;
+    padding: 0 1px;
+    position: relative;
+    transition: all 0.3s ease-out 0s;
+    width: 110px;
+    z-index: 7777;
+}
+.wrapper-dropdown-5::after {
+}
+.wrapper-dropdown-5 .dropdown {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fff none repeat scroll 0 0;
+    border-color: -moz-use-text-color rgba(0, 0, 0, 0.2);
+    border-image: none;
+    border-radius: 0 0 5px 5px;
+    border-style: none solid;
+    border-width: medium 1px;
+    left: 0;
+    list-style: outside none none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+	margin-top: 20%;
+    /*right: 18%;*/
+    top: 100%;
+	width: 100px;
+    transition: all 0.3s ease-out 0s;
+    z-index: 7777;
+}
+.wrapper-dropdown-5 .dropdown li {
+    padding: 0;
+    text-align: center;
+}
+.wrapper-dropdown-5 .dropdown li a {
+    border-bottom: 1px solid #e6e8ea;
+    color: #333;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-out 0s;
+}
+.wrapper-dropdown-5 .dropdown li:last-of-type a {
+    border: medium none;
+}
+.wrapper-dropdown-5 .dropdown li i {
+    color: inherit;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.wrapper-dropdown-5 .dropdown li:hover a {
+    color: #57a9d9;
+}
+.wrapper-dropdown-5.active {
+    /*background: #4cbeff none repeat scroll 0 0;*/
+    border-bottom: medium none;
+    border-radius: 5px 5px 0 0;
+    box-shadow: none;
+    color: white;
+}
+.wrapper-dropdown-5.active::after {
+    border-color: #82d1ff transparent;
+}
+.wrapper-dropdown-5.active .dropdown {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    max-height: 400px;
+}

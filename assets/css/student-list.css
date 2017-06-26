@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+table {
+    width:100%;
+}
+
+.accordion_head {
+    padding: 12px 20px;
+}
+
+.lesson-bar-left {
+    float: left;
+    padding-bottom: 6px;
+    width: 37%;
+}
+
+.lesson-bar-left .sess-left {
+    color: #555555;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.sortStudentRedBorder {
+    border-bottom:2px solid #F72636;
+    border-collapse: collapse;
+}
+.sortStudentListPadding {
+    padding-bottom:6px;
+    width: 96%;
+}

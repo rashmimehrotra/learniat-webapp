@@ -1,0 +1,2 @@
+ERROR - 2015-10-08 04:21:38 --> Query error: Duplicate entry '394-16-24' for key 'parent_topic_id' - Invalid query: INSERT INTO `topic` (`parent_topic_id`, `subject_id`, `topic_name`, `topic_info`) VALUES ('394', '16', '24', NULL)
+ERROR - 2015-10-08 05:15:46 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12

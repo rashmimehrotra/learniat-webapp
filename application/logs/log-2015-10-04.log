@@ -1,0 +1,7 @@
+ERROR - 2015-10-04 09:05:22 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12
+ERROR - 2015-10-04 09:05:22 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12
+ERROR - 2015-10-04 09:05:22 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12
+ERROR - 2015-10-04 16:02:30 --> Severity: Warning --> imagecolorsforindex(): Color index 32 out of range /var/www/learniat/application/models/Question_option.php 314
+ERROR - 2015-10-04 16:03:50 --> Severity: Warning --> imagecolorsforindex(): Color index 32 out of range /var/www/learniat/application/models/Question_option.php 314
+ERROR - 2015-10-04 16:05:41 --> Severity: Warning --> imagecolorsforindex(): Color index 32 out of range /var/www/learniat/application/models/Question_option.php 314
+ERROR - 2015-10-04 16:07:19 --> Severity: Warning --> imagecolorsforindex(): Color index 32 out of range /var/www/learniat/application/models/Question_option.php 314

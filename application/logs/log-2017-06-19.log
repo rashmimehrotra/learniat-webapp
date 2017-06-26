@@ -1,0 +1,53 @@
+ERROR - 2017-06-19 10:05:39 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-06-19 10:05:48 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-06-19 10:06:04 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-06-19 10:06:07 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-06-19 10:06:09 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-06-19 10:06:42 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-06-19 10:06:47 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-06-19 10:06:57 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-06-19 10:57:50 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
+ERROR - 2017-06-19 10:57:50 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
+ERROR - 2017-06-19 10:57:50 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
+ERROR - 2017-06-19 10:57:50 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
+ERROR - 2017-06-19 10:58:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
+ERROR - 2017-06-19 10:58:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
+ERROR - 2017-06-19 10:58:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
+ERROR - 2017-06-19 10:58:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
+ERROR - 2017-06-19 12:12:45 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:12:45 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:12:45 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:12:45 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:12:45 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:12:45 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:12:45 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:12:45 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:12:45 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:12:45 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:17:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:17:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:17:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:17:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:17:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:17:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:17:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:17:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:17:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:17:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:19:20 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-19 12:19:20 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-19 12:19:20 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat/application/libraries/services/External.php 115
+ERROR - 2017-06-19 12:19:20 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-19 12:19:20 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/libraries/services/External.php 117
+ERROR - 2017-06-19 12:19:20 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/controllers/session/Answer.php 36
+ERROR - 2017-06-19 12:19:20 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/index.php 9
+ERROR - 2017-06-19 12:43:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:43:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:43:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:43:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:43:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:43:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:43:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat/application/views/answer/mrq.php 25
+ERROR - 2017-06-19 12:57:38 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-06-19 15:13:47 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-06-19 19:53:42 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65

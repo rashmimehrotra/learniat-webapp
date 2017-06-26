@@ -1,0 +1,26 @@
+ERROR - 2017-03-05 07:33:22 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 07:33:22 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 07:42:58 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 07:42:58 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 09:00:07 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 09:00:07 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 10:12:11 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 10:12:11 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 10:13:58 --> Severity: Warning --> chmod(): Operation not permitted /var/www/learniat/application/models/Uploaded_images.php 63
+ERROR - 2017-03-05 10:20:49 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 10:20:49 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 10:21:30 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 10:21:30 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 13:18:49 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 13:18:49 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 14:09:19 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 14:09:19 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 14:09:25 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-03-05 15:01:30 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 15:01:30 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 17:49:01 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 17:49:01 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 17:49:54 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-05 17:49:54 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-05 18:11:28 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-03-05 18:11:35 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65

@@ -1,0 +1,4 @@
+ERROR - 2016-01-07 19:43:21 --> 404 Page Not Found: Register/index
+ERROR - 2016-01-07 19:43:28 --> 404 Page Not Found: Registration/index
+ERROR - 2016-01-07 20:14:12 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2016-01-07 20:14:12 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135

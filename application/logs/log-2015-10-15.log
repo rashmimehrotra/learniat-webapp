@@ -1,0 +1,3 @@
+ERROR - 2015-10-15 11:02:13 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's age is less than 20? Assume notations: P(A) = probability of event A; P(A|B) =' at line 3 - Invalid query: SELECT question_id
+		FROM questions
+		WHERE question_name = 'In a group of 120 people, 90 have an age of more 30 years, and the others have an age of less than 20 years. If a person is selected at random from this group, what is the probability the person's age is less than 20? Assume notations: P(A) = probability of event A; P(A|B) = probability of event A when event B has already happened.'

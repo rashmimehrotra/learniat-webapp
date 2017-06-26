@@ -1,0 +1,8 @@
+ERROR - 2017-03-18 00:51:22 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-18 00:51:22 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-18 00:52:29 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2017-03-18 00:52:29 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2017-03-18 00:59:56 --> Severity: Warning --> imagecolorsforindex(): Color index 32 out of range /var/www/learniat/application/models/Question_option.php 312
+ERROR - 2017-03-18 01:00:30 --> Severity: Warning --> imagecolorsforindex(): Color index 32 out of range /var/www/learniat/application/models/Question_option.php 312
+ERROR - 2017-03-18 01:00:50 --> Severity: Warning --> imagecolorsforindex(): Color index 32 out of range /var/www/learniat/application/models/Question_option.php 312
+ERROR - 2017-03-18 01:01:13 --> Severity: Warning --> imagecolorsforindex(): Color index 32 out of range /var/www/learniat/application/models/Question_option.php 312

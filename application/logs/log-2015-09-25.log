@@ -1,0 +1,1 @@
+ERROR - 2015-09-25 06:51:51 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65

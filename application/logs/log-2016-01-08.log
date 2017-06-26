@@ -1,0 +1,8 @@
+ERROR - 2016-01-08 05:25:48 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2016-01-08 05:25:48 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2016-01-08 05:25:57 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2016-01-08 05:25:57 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2016-01-08 05:25:59 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2016-01-08 05:25:59 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
+ERROR - 2016-01-08 05:26:01 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
+ERROR - 2016-01-08 05:26:01 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135

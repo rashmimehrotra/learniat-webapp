@@ -1,0 +1,11 @@
+.responseDiv {
+    float:right;
+    padding-left:10px;
+    padding-right:10px;
+}
+.responseTdMin {
+    width: 95px;
+}
+.responseTdMax {
+    width: 120px;
+}

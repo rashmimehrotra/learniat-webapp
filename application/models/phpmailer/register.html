@@ -1,0 +1,54 @@
+<!DOCTYPE html>	
+
+<html>
+<head>
+    <title>Registeration Form</title>
+    <script type="text/javascript" src="confirmpassword.js"></script>
+</head>
+
+<body >
+    <form action="register.php" method="post" id="form" onsubmit="return onsubmitcheck()" >
+        Name:<input type = "text" name = "username" /><br>
+        Password:<input type = "password" name = "password" id='pass' onkeyup='verifyLength();'/>
+        <label id = "displayMessage"></label><br>
+        Confirm Password:<input type="password" name="conpass" id='conpass' onkeyup='verifyPassword();'/>
+        <label id='passMessage'></label><br>
+        SAP-ID:<input type="number" name="sap" id='sap' min="60000000000" max="69999999999" onkeyup='verifySAP();' />
+        <label id='sappify'></label><br>
+        Email Address:<input type = "text" name ="email" id = 'email' onkeyup='emailCheck();'/>
+        <label id='emailMessage'></label><br>
+        Department: <select name="department">
+
+        <option value="Comp">Computers</option>
+
+        <option value="IT">Information Technology</option>
+
+        <option value="Mech">Mechanical</option>
+
+        <option value="Elex">Electronics</option>
+
+        <option value="Extc">Electronics and Telecommunications</option>
+
+        <option value="Prod">Production</option>
+
+        <option value="Biomed">BioMedical</option>
+
+    </select><br>
+
+    Year: <select  name="year">
+
+    <option value="1">F.E.</option>
+
+    <option value="2">S.E.</option>
+
+    <option value="3">T.E.</option>
+
+    <option value="4">B.E.</option>
+
+</select><br>
+
+<input type="submit" value="Submit" name="submit" />
+</form>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+ERROR - 2015-10-26 18:24:46 --> Severity: Warning --> imagecolorsforindex(): Color index 32 out of range /var/www/learniat/application/models/Question_option.php 314
+ERROR - 2015-10-26 18:43:43 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 123
+ERROR - 2015-10-26 18:43:43 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 124
+ERROR - 2015-10-26 18:43:45 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 123
+ERROR - 2015-10-26 18:43:45 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 124
+ERROR - 2015-10-26 19:01:16 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 123
+ERROR - 2015-10-26 19:01:16 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 124
+ERROR - 2015-10-26 19:01:41 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 123
+ERROR - 2015-10-26 19:01:41 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 124
+ERROR - 2015-10-26 19:14:39 --> Severity: Warning --> chmod(): Operation not permitted /var/www/learniat/application/models/Uploaded_images.php 63
+ERROR - 2015-10-26 19:22:02 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 123
+ERROR - 2015-10-26 19:22:02 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 124

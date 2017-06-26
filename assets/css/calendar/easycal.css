@@ -1,0 +1,150 @@
+
+.bar {
+    margin-left: 1px;
+}
+.easycal,.easycal table{
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+.easycal{
+	border: 1px solid #E5E5E5;
+}
+
+.easycal table.ec-head-table{
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.easycal table.ec-head-table tr{
+	height: 40px;
+	background:#F7F7F7;
+	color: #555555;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+	font-weight:bold;
+}
+
+.easycal table.ec-head-table tr td{
+	border-left: 1px solid #E5E5E5;
+	text-align: center;
+}
+
+.easycal table.ec-head-table tr td:FIRST-CHILD{
+	border-left: 0;
+	width: 80px;
+}
+
+.easycal table.ec-time-grid-table tr td{
+	border-left: 1px solid #E5E5E5;
+}
+
+.easycal table.ec-time-grid-table tr td:FIRST-CHILD{
+	border-left: 0;
+	width: 80px;
+}
+
+.easycal table.ec-time-grid-table tr td .table-cell{
+	height: 60px;
+    max-height: 60px;
+	border-top: 1px solid #E5E5E5;
+	text-align: center;
+	/*padding: 1px;*/
+}
+
+.easycal table.ec-time-grid-table tr td .table-cell:FIRST-CHILD{
+	border-top: 0;
+}
+
+.easycal table.ec-time-grid-table tr td .table-cell.ec-slot{
+	cursor: pointer;
+}
+
+.easycal table.ec-time-grid-table .table-cell .ec-time-range{
+	font-size: 10px;
+	padding-bottom: 3px;
+}
+/*
+.easycal table.ec-time-grid-table tr td .ec-slot .ec-minor-slot:FIRST-CHILD{
+	border-top: 0 !important;
+	border-bottom: 1px dashed #E5E5E5;
+}
+*/
+/***************/
+.ec-minor-slot {
+	/*padding-left: 6px;*/
+    text-align: left;
+}
+.ec-minor-slot.ec-event {
+	border-radius:25px;
+    border: medium none !important;
+	/*background:#3A72A8 !important;*/
+	color:#ffffff;
+	font-family: "Montserrat",sans-serif;
+    font-size: 11px;
+}
+.table-cell.ec-time {
+    color: #555555;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    /*font-weight: bold;*/
+}
+
+.heading_cont {
+    background: #ededed none repeat scroll 0 0;
+    height: 47px;
+    padding: 0px 10px 0;
+}
+.sess-bar-left {
+    float: left;
+    padding-top: 6px;
+    width: 74%;
+}
+.sess-bar-left .sess-left {
+    color: #555555;
+    font-size: 18px;
+	font-family: "Open Sans",sans-serif;
+	font-weight: normal;
+	margin: 0;
+}
+.sess-bar-right {
+    float: right;
+    width: 25%;
+    padding-top: 8px;
+}
+.date-btn {
+float:left;
+}
+.date-year {
+    float:left;
+    color: #555555;
+    font-family: "Open Sans",sans-serif;
+    font-size: 12px;
+	font-weight:bold;
+	padding:8px 15px 0 15px;
+}
+/*******new css********/
+.easycal table.event-calendar th tr td {
+	border: none;
+    vertical-align: middle;
+}
+.easycal table.event-calendar {
+	border: none;
+    width: 90%;
+	/*background: #3a72a8;*/
+}
+table.event-calendar th, table.event-calendar td, table.event-calendar tr {
+    border-style: none;
+    border-width: 0px;
+}
+.wc-cal-event:hover {
+    /*height: auto !important;*/
+    z-index: 9999;
+    background-color: #e2f6e1 !important;
+}
+
+.wc-cal-event-full {
+    height: auto !important;
+}
+

@@ -1,0 +1,12 @@
+ERROR - 2015-10-21 05:24:17 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's complement of binary number 0101 is'' at line 3 - Invalid query: SELECT question_id
+		FROM questions
+		WHERE question_name = '2's complement of binary number 0101 is'
+ERROR - 2015-10-21 07:23:12 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'h' parameters of the circuit shown in the figure are hib = 25 Ω, hfb = 0.999 an' at line 3 - Invalid query: SELECT question_id
+		FROM questions
+		WHERE question_name = 'The 'h' parameters of the circuit shown in the figure are hib = 25 Ω, hfb = 0.999 and hob = 10-6Ω The Voltage gain is'
+ERROR - 2015-10-21 07:23:33 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'h' parameters of the circuit shown in the figure are hib = 25 Ω, hfb = 0.999 an' at line 3 - Invalid query: SELECT question_id
+		FROM questions
+		WHERE question_name = 'The 'h' parameters of the circuit shown in the figure are hib = 25 Ω, hfb = 0.999 and hob = 10-6Ω The Voltage gain is'
+ERROR - 2015-10-21 07:25:59 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'h' parameters of the circuit shown in the figure are hib = 25 Ω, hfb = 0.999 an' at line 3 - Invalid query: SELECT question_id
+		FROM questions
+		WHERE question_name = 'The 'h' parameters of the circuit shown in the figure are hib = 25 Ω, hfb = 0.999 and hob = 10-6Ω The Voltage gain is'

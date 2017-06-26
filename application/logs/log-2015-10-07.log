@@ -1,0 +1,7 @@
+ERROR - 2015-10-07 08:49:26 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12
+ERROR - 2015-10-07 12:11:33 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 120
+ERROR - 2015-10-07 12:11:33 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 121
+ERROR - 2015-10-07 22:58:20 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 120
+ERROR - 2015-10-07 22:58:20 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 121
+ERROR - 2015-10-07 22:58:24 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 120
+ERROR - 2015-10-07 22:58:24 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 121

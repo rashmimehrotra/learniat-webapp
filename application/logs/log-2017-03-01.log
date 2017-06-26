@@ -1,0 +1,2 @@
+ERROR - 2017-03-01 19:40:45 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2017-03-01 19:40:54 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65

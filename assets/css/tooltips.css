@@ -1,0 +1,142 @@
+.tooltip, .arrow:after {
+
+}
+
+.tooltip {
+
+}
+.arrow {
+}
+.arrow:after {
+
+ 
+}
+.tooltip.active {
+}
+.tooltip.out {
+}
+
+
+#White {
+	z-index:9999;
+	height: 80px;
+	width: 218px;
+	background:url(../images/White.png) no-repeat;
+}
+#ParticipationIndexLesson  {
+  padding-top:10px;
+  margin-left:15px;
+  float:left;
+  height: 47px;
+  font-size:11px;
+  text-align:left;
+  position: absolute;
+}
+
+#ParticipationIndexLeft {
+  padding-top:10px;
+  margin-left:10px;
+  float:left;
+  height: 47px;
+  width: 60px;
+  position: absolute;
+}
+
+#ParticipationIndexRight{
+  padding-top:10px;
+  margin-left:60px;
+  height: 47px;
+  width: 150px;
+  font-size:12px;
+  position: absolute;
+}
+.sessionPopName {
+    color: #333333;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.sessionPopIndex {
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+}
+.sessionPopDetails {
+    color: #016699;
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+}
+/*.popupDiv {
+	display: none;
+	z-index:7777;
+	background:url(../images/White.png) no-repeat;
+	height: 80px;
+	width: 218px;
+}*/
+.popupTable {
+	border-collapse: separate;
+	min-width: 180px;
+    border-spacing: 5px 0;
+    /*padding:5px;*/
+}
+.popupTable td{
+	padding-left:3px;
+}
+
+.popupDivIndex {
+	position: absolute;
+	display: none;
+	z-index:7777;
+	width: auto;
+	height: auto;
+	line-height: 20px;
+	padding: 6px;	
+	background: rgb(255, 255, 255);
+	border: 1px solid #e7e7e7;
+	border-radius: 7px;
+	text-shadow: #e7e7e7 1px 1px 1px;
+	box-shadow: #e7e7e7 1px 1px 2px 0px;
+	margin-top:-15px;
+	margin-left: 19px;
+}
+.popupDiv {
+	position: absolute;
+	display: none;
+	z-index:7777;
+	width: 217px;
+	height: auto;
+	line-height: 20px;
+	padding: 6px;	
+	background: rgb(255, 255, 255);
+	border: 1px solid #e7e7e7;
+	border-radius: 7px;
+	text-shadow: #e7e7e7 1px 1px 1px;
+	box-shadow: #e7e7e7 1px 1px 2px 0px;
+	margin-top:-15px;
+	margin-left: 11px;
+}
+
+.popupDiv:before {
+	 content: '';
+	 position: absolute;
+	 top: 100%;
+	 left: 39%;
+	 border-top: 12px solid #e7e7e7;
+	 border-right: 12px solid transparent;
+	 border-left: 12px solid transparent;
+}
+.popupDiv:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #FFFFFF transparent transparent transparent;
+	top: 100%;
+	left: 40%;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: -1px;
+}

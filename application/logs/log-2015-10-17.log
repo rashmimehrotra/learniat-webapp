@@ -1,0 +1,2 @@
+ERROR - 2015-10-17 12:53:53 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 120
+ERROR - 2015-10-17 12:53:53 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 121

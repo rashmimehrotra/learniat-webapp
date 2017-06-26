@@ -1,0 +1,3 @@
+ERROR - 2016-02-20 04:39:55 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12
+ERROR - 2016-02-20 04:53:22 --> Query error: Duplicate entry '485-21-History and Science' for key 'parent_topic_id' - Invalid query: INSERT INTO `topic` (`parent_topic_id`, `subject_id`, `topic_name`, `topic_info`) VALUES ('485', '21', 'History and Science', NULL)
+ERROR - 2016-02-20 05:45:20 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12

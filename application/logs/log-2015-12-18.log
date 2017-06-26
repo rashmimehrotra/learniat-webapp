@@ -1,0 +1,2 @@
+ERROR - 2015-12-18 18:45:39 --> Severity: Warning --> include(/var/www/learniat/application/views/lesson/question/list.php): failed to open stream: Permission denied /var/www/learniat/system/core/Loader.php 914
+ERROR - 2015-12-18 18:45:39 --> Severity: Warning --> include(): Failed opening '/var/www/learniat/application/views/lesson/question/list.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') /var/www/learniat/system/core/Loader.php 914

@@ -1,0 +1,9 @@
+ERROR - 2015-09-27 12:08:28 --> Severity: Warning --> getimagesize(): Filename cannot be empty /var/www/learniat/application/models/Question_option.php 245
+ERROR - 2015-09-27 12:08:28 --> Error while save option - Unrecognized image type 
+ERROR - 2015-09-27 12:08:49 --> Severity: Warning --> getimagesize(): Filename cannot be empty /var/www/learniat/application/models/Question_option.php 245
+ERROR - 2015-09-27 12:08:49 --> Error while save option - Unrecognized image type 
+ERROR - 2015-09-27 12:20:40 --> Severity: Warning --> chmod(): Operation not permitted /var/www/learniat/application/models/Uploaded_images.php 59
+ERROR - 2015-09-27 14:45:40 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2015-09-27 14:45:46 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
+ERROR - 2015-09-27 15:15:05 --> Severity: Warning --> getimagesize(): Filename cannot be empty /var/www/learniat/application/models/Question_option.php 245
+ERROR - 2015-09-27 15:15:05 --> Error while save option - Unrecognized image type 

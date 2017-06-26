@@ -1,0 +1,6 @@
+ERROR - 2015-10-19 10:16:34 --> Severity: error --> Exception: session not available /var/www/learniat/application/controllers/lesson/Index.php 12
+ERROR - 2015-10-19 11:39:26 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 120
+ERROR - 2015-10-19 11:39:26 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 121
+ERROR - 2015-10-19 11:39:49 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 120
+ERROR - 2015-10-19 11:39:49 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 121
+ERROR - 2015-10-19 14:07:21 --> 404 Page Not Found: Logi/index

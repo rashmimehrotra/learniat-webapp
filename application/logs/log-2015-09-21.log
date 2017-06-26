@@ -1,0 +1,6 @@
+ERROR - 2015-09-21 06:02:16 --> Severity: Warning --> getimagesize(): Filename cannot be empty /var/www/learniat/application/models/Question_option.php 245
+ERROR - 2015-09-21 06:02:16 --> Error while save option - Unrecognized image type 
+ERROR - 2015-09-21 06:03:08 --> Severity: Warning --> getimagesize(): Filename cannot be empty /var/www/learniat/application/models/Question_option.php 245
+ERROR - 2015-09-21 06:03:08 --> Error while save option - Unrecognized image type 
+ERROR - 2015-09-21 06:08:42 --> Severity: Warning --> getimagesize(): Filename cannot be empty /var/www/learniat/application/models/Question_option.php 245
+ERROR - 2015-09-21 06:08:42 --> Error while save option - Unrecognized image type 
