@@ -43,7 +43,11 @@ endif; ?>
                         </td>
                     </tr>
 
-
+					<tr colspan="2">
+						<div id="canvasDiv" style="margin-top:15px;text-align: center;">
+							<canvas id="canvas" width='1' height='1' style="border: 1px solid black" />
+						</div>
+					</tr>
                     <tr>
                         <td colspan="2">
 
@@ -57,7 +61,7 @@ endif; ?>
                                 endif;
 
                                 ?>
-
+								
                             </div>
 
                             <input type="hidden" id="x" name="x" />
@@ -67,6 +71,7 @@ endif; ?>
 
                         </td>
                     </tr>
+					
                 </table>
             </div>
 
@@ -131,17 +136,19 @@ endif; ?>
 
 
 
-
+	var canvas = document.getElementById('canvas');
+	var canvasFlag=0;
     function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
-
+			$("#save").prop('disabled', false);
+			
             reader.onload = function (e) {
                 var image = new Image();
                 image.src = e.target.result;
 
                 $('#targetImg').attr('src', image.src );
-
+				
                 image.onload = function() {
                     var imageWidth = this.width;
                     var imageHeight = this.height;
@@ -151,23 +158,94 @@ endif; ?>
 
                     var imageWidthMinRetina = <?php echo CROP_MIN_WIDTH_RETINA; ?>;
                     var imageHeightMinRetina = <?php echo CROP_MIN_HEIGHT_RETINA; ?>;
-
-                    var dialogText = '';
+					//alert(imageWidth+' '+imageHeight+' '+imageWidthMin+' '+imageHeightMin);
+					//1024 576 1500 1000 780 520
+					//900 900 1500 1000 780 520
+					var dialogText = '';
                     var dialogWarning = '';
+					var aspectRatio =3/2;
+					
+					/*var image = new Image();
+					image.src = 'http://placehold.it/300x550';
+					image.onload = function () {
+						var canvasContext = canvas.getContext('2d');
+						var wrh = image.width / image.height;
+						var newWidth = canvas.width;
+						var newHeight = newWidth / wrh;
+						if (newHeight > canvas.height) {
+									newHeight = canvas.height;
+							newWidth = newHeight * wrh;
+						}
+						var xOffset = newWidth < canvas.width ? ((canvas.width - newWidth) / 2) : 0;
+						var yOffset = newHeight < canvas.height ? ((canvas.height - newHeight) / 2) : 0;
 
-
-                    if (imageWidth < imageWidthMin) {
+						canvasContext.drawImage(image, xOffset, yOffset, newWidth, newHeight);
+					  };
+					  
+					*/
+                    if (imageWidth < imageWidthMin || imageHeight < imageHeightMin) {
                         //If width of pic less than min required width
+						
+						
+						if(imageWidth>imageHeight*aspectRatio)
+						{
+					//		alert('the case');
+							dialogText = 'The height of this picture is smaller than the lowest size permitted i.e. ' + imageHeightMin +'.';
+							dialogWarning = 'If you upload it, it will <b>NOT</b> fill the entire width of a normal iPad screen';
+							document.getElementById('targetImgDiv').style.display='none';
+							canvasFlag=1;
+							var canvasWidth = imageWidth;
+							var canvasHeight = imageWidth / aspectRatio;
+						//	alert( canvasWidth+' '+canvas.width+' '+canvasHeight+' '+canvas.height);
+							canvas.width=canvasWidth;
+							canvas.height=canvasHeight;
+							var canvasContext = canvas.getContext('2d');
+							var yOffset = imageHeight < canvas.height ? ((canvas.height - imageHeight) / 2) : 0;
+							//alert( canvasWidth+' '+canvas.width+' '+canvasHeight+' '+canvas.height);
+							//alert(yOffset);
+							
+							
+							canvasContext.drawImage(image,x=0, y=yOffset, width=imageWidth, height=imageHeight);
+							canvasContext.fillStyle = "black";
+							canvasContext.fillRect(0, 0, canvas.width,yOffset);
+							canvasContext.fillRect(0, yOffset+imageHeight, canvas.width,yOffset);
+						}else if (imageWidth < imageHeight)
+						{
+						
+						
+						
+						}
                         dialogText = 'The width of this picture is smaller than the lowest size permitted i.e. ' + imageWidthMin +'.';
                         dialogWarning = 'If you upload it, it will <b>NOT</b> fill the entire width of a normal iPad screen';
-                    } else if ((imageWidth > imageWidthMin)  && (imageWidth <imageWidthMinRetina)) {
+					// ahme edits
+						/*var canvasWidth = imageHeight * aspectRatio;
+						var canvasHeight = imageHeight;
+						var canvasContext = canvas.getContext('2d');
+						var xOffset = imageWidth < canvas.width ? ((canvas.width - imageWidth) / 2) : 0;
+						canvasContext.drawImage(image, xOffset, 0 , canvasWidth, canvasHeight);*/
+					// end ahmed edit
+                    } 
+					else if ((imageWidth > imageWidthMin)  && (imageWidth <imageWidthMinRetina)) {
+						document.getElementById('canvasDiv').style.display='none';
+						document.getElementById('targetImgDiv').style.display='block';
                         dialogText = 'The width of this picture is smaller that needed for a full size iPad retina screen i.e. ' + imageWidthMinRetina +'.';
                         dialogWarning = 'If you upload it, it will NOT fill the entire width of an iPad retina screen. However will be fine for a normal iPad.';
-                    } else if (imageHeight < imageHeightMin) {
+                    } 
+					else if (imageHeight < imageHeightMin) {
                         //If height of pic less than min required height
+					//	alert('the case');
                         dialogText = 'The height of this picture is smaller than the lowest size permitted i.e. ' + imageHeightMin +'.';
                         dialogWarning = 'If you upload it, it will <b>NOT</b> fill the entire width of a normal iPad screen';
-                    } else if ((imageHeight > imageHeightMin)  && (imageHeight <imageHeightMinRetina)) {
+						var canvasWidth = imageHeight;
+						var canvasHeight = imageHeight / aspectRatio;
+						canvas.Width=canvasWidth;
+						canvas.Height=canvasHeight;
+						var canvasContext = canvas.getContext('2d');
+						var yOffset = imageHeight < canvas.Height ? ((canvas.Height - imageHeight) / 2) : 0;
+						//alert(yoffset);
+						canvasContext.drawImage(image,x=0, y=yOffset, width=imageWidth, height=imageHeight);
+                    } 
+					else if ((imageHeight > imageHeightMin)  && (imageHeight <imageHeightMinRetina)) {
                         dialogText = 'The height of this picture is smaller than that needed for a full size iPad retina screen i.e. ' + imageWidthMinRetina +'.';
                         dialogWarning = 'If you upload it, it will NOT fill the entire height of an iPad retina screen. However will be fine for a normal iPad.';
                     }
@@ -200,6 +278,8 @@ endif; ?>
 
                                     $(this).dialog('close');
                                     $('#targetImg').remove();
+									$("#save").prop('disabled', true);
+									//document.getElementById('save').disabled=true;
                                     return false;
                                 }
                             }
@@ -212,10 +292,16 @@ endif; ?>
 
 
                 }
-            }
+				
+					
+				
+			}
 
             reader.readAsDataURL(input.files[0]);
+			
+			
         }
+		
     }
 
     /**
@@ -227,6 +313,7 @@ endif; ?>
      */
     function applyCropOnImage(imageWidthMin, imageHeightMin, imageWidth, imageHeight)
     {
+		
         if (imageWidth > 1000) {
             var percentImageWidth = ((imageWidth - 1000)%10);
             percentImageWidth += 100;
@@ -246,14 +333,30 @@ endif; ?>
                 minCropSize = [imageHeight * 1.5, imageHeight];
                 cropSelect =  [0, 0, imageHeight * 1.5, imageHeight ];
             } else {
-                minCropSize = [imageWidth, imageHeight];
-                cropSelect =  [0, 0, imageWidth, imageHeight ];
+				//512 35 1500 1000 780 520
+				minCropSize = [imageWidth, imageHeight];
+				//alert(minCropSize);
+				//Ahmed Montasser start (code doesn't change anthing
+				var max= Math.max(imageWidth,imageHeight);
+				var minHeightAspect = imageHeight;
+				var minWidthAspect = imageWidth;
+				if(imageWidth>imageHeight)
+				{
+					minHeightAspect = imageWidth * (2/3);
+				}
+				else if(imageWidth<imageHight)
+				{
+					minWidthAspect = imageHeight * (3/2);
+				}
+				//Ahmed Montasser end
+                cropSelect =  [0,0, imageWidth, imageHeight ];
+				//alert(cropSelect);
             }
 
-
+		// aspect ratio and min size is conflicting 
         }
         $('#targetImg').Jcrop({
-            minSize : minCropSize,
+            minSize : minCropSize,		
             setSelect: cropSelect,
             aspectRatio: 3 / 2,
             bgColor: '',
@@ -282,14 +385,22 @@ endif; ?>
 
     function validateScribbleImage()
     {
+		//alert('validate');
         var input = document.getElementById('imgInp');
         readURL(input);
+		
         $('#checkScribbleAvailable').val('');
     }
 
     $('#save').click(function() {
-        var imageData = $('.jcrop-holder > img').attr('src');
-        $('.hidden-image-data').text(imageData);
+         
+		if(canvasFlag==1)
+		{
+			var imageData = canvas.toDataURL();
+			console.log(imageData);
+		}else
+			var imageData = $('.jcrop-holder > img').attr('src');
+		$('.hidden-image-data').text(imageData);
     });
 
 </script>

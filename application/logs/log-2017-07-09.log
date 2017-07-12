@@ -1,0 +1,99 @@
+ERROR - 2017-07-09 12:36:22 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3522.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 12:44:02 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3523.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 12:52:33 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3524.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 13:06:34 --> Severity: Notice --> Undefined index: topicId /var/www/learniat_dev/application/controllers/lesson/Questions.php 75
+ERROR - 2017-07-09 13:06:34 --> Severity: Notice --> Undefined index: questionType /var/www/learniat_dev/application/controllers/lesson/Questions.php 75
+ERROR - 2017-07-09 13:06:34 --> Severity: Notice --> Undefined index: questionType /var/www/learniat_dev/application/controllers/lesson/Questions.php 78
+ERROR - 2017-07-09 13:11:23 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3525.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 13:15:42 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3526.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 13:25:31 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3527.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 13:34:12 --> Severity: Parsing Error --> syntax error, unexpected '$fp' (T_VARIABLE) /var/www/learniat_dev/application/models/Question.php 233
+ERROR - 2017-07-09 13:35:55 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3528.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 13:40:10 --> Severity: Parsing Error --> syntax error, unexpected '$this' (T_VARIABLE) /var/www/learniat_dev/application/models/Question.php 215
+ERROR - 2017-07-09 13:40:38 --> Severity: Parsing Error --> syntax error, unexpected ';' /var/www/learniat_dev/application/models/Question.php 214
+ERROR - 2017-07-09 13:41:08 --> Severity: Parsing Error --> syntax error, unexpected ')' /var/www/learniat_dev/application/models/Question.php 236
+ERROR - 2017-07-09 13:41:12 --> Severity: Parsing Error --> syntax error, unexpected ')' /var/www/learniat_dev/application/models/Question.php 236
+ERROR - 2017-07-09 13:43:25 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3529.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 13:45:30 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3530.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 16:20:44 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:20:44 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:20:44 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:20:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:20:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:20:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-07-09 16:20:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-09 16:22:53 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:22:53 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:22:53 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:22:53 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:22:53 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:22:53 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-07-09 16:22:53 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-09 16:25:49 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:25:49 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:25:49 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:25:49 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:25:49 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:25:49 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-07-09 16:25:49 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-09 16:29:19 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:29:19 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:29:19 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:29:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:29:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:29:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-07-09 16:29:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-09 16:30:19 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:30:19 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:30:19 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:30:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:30:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:30:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-07-09 16:30:19 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-09 16:30:23 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:30:23 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:30:23 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 115
+ERROR - 2017-07-09 16:30:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:30:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-09 16:30:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-07-09 16:30:23 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-09 16:33:39 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-07-09 16:33:39 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-07-09 16:33:39 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-07-09 16:33:39 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-07-09 16:33:39 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-07-09 16:33:39 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-07-09 16:33:39 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-09 16:36:29 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-07-09 16:36:29 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-07-09 16:36:29 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-07-09 16:36:29 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-07-09 16:36:29 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-07-09 16:36:29 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-07-09 16:36:29 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-09 16:41:52 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-07-09 16:41:52 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-07-09 16:41:52 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-07-09 16:41:52 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-07-09 16:41:52 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-07-09 16:41:52 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-07-09 16:41:52 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-09 18:43:18 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3532.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 18:47:50 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3533.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 18:50:51 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3534.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 19:00:03 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3535.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 19:04:08 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3536.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 19:08:25 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3537.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 19:12:45 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3538.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 19:18:48 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3539.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 19:22:52 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: INSERT INTO `uploaded_images` (`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, 'uploads_webapp/q-3540.png', '496', 1, 'NOW()')
+ERROR - 2017-07-09 19:35:04 --> Query error: Unknown column '$imageTypeId' in 'field list' - Invalid query: INSERT INTO `uploaded_images`(`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES ($imageTypeId, $imagePath, $uploadedBy,1,NOW())
+ERROR - 2017-07-09 19:40:41 --> Severity: Error --> Call to undefined method CI_DB_mysqli_driver::_error_message() /var/www/learniat_dev/application/models/Uploaded_images.php 33
+ERROR - 2017-07-09 21:18:32 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3545.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24250'
+ERROR - 2017-07-09 21:19:20 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3545.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24250'
+ERROR - 2017-07-09 21:20:28 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3545.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24250'
+ERROR - 2017-07-09 21:21:25 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3545.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24250'

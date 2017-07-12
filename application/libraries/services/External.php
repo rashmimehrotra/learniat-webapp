@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class External
 {
-	protected $_jupiterApi = 'http://54.251.104.13/Jupiter/sun.php?api=';
+	protected $_jupiterApi = 'http://54.251.104.13/jupiter_dev/sun.php?api=';
 	/**
 	 * Get jupiter api url
 	 * @return string $pageurl
@@ -112,8 +112,10 @@ class External
 	 */
 	public function xmlToObject($result)
 	{   
+		//var_dump($result);
 		$xml = simplexml_load_string($result);
-		
+		$fp=fopen('xml.txt','w');
+		fwrite($fp,print_r($xml,true));
 		return $xml->SunStone->Action;
 	}
 	

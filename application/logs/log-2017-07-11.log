@@ -1,0 +1,5 @@
+ERROR - 2017-07-11 05:35:39 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3556.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24284'
+ERROR - 2017-07-11 05:38:06 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3556.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24284'
+ERROR - 2017-07-11 10:20:56 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat_dev/application/views/calendar/cal.php 65

@@ -10,8 +10,11 @@
   	</tr>
   	
   	<?php 
-  	$optionData = $assessmentAnswerData->Options->Option;
+  	$optionData = $assessmentAnswerData->OptionContainer->Option;
+	////var_dump('---------------------------------------------------------');
+	////var_dump($optionData);
   	foreach ($questionOptionData['firstColumn'] AS  $key => $option) :
+		////var_dump('key='.$key.' value='.$option);
   	?>
         <tr>
             <td style='max-width: 240px;' >

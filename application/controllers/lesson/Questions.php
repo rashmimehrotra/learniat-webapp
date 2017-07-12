@@ -60,7 +60,8 @@ class Questions extends MY_Controller {
 		$classId = $this->input->get('classId');
 		$schoolId = $this->input->get('schoolId');
         $topicId = $this->input->post('topicId');
-
+		$fp=fopen('save.txt','w');
+		//fwrite($fp,$parentTopicId.' '.$classId.' '.$schoolId.' '.$topicId.' '.$_POST['save']);
 		$redirectUrl = '/lesson/questions/parentTopic' . "?parentTopicId=$parentTopicId&classId=$classId&schoolId=$schoolId";
 
         if (isset($topicId) && $topicId > 0) {
@@ -71,7 +72,8 @@ class Questions extends MY_Controller {
 			$optionData = $this->input->post();
 			$this->load->model('question');
 			$teacherId = $this->session->profileData['user_id'];
-
+			//fwrite($fp,print_r($optionData,true));
+			//fwrite($fp,print_r($teacherId,true));
 			if ($optionData['topicId'] === 'null' || $optionData['questionType'] === 'null') {
 				return false;
 			}
@@ -91,6 +93,8 @@ class Questions extends MY_Controller {
 							$redirectUrl .= '&error=Question already exist.';
 						} else {
 							//update new record*/
+							
+							fwrite($fp,1);
 							$this->question->updateQuestionWithOption($optionData['questionId'], $optionData, $teacherId);
 							$redirectUrl .= '&success=Question data has been saved successfully.';
 						//}
@@ -101,6 +105,8 @@ class Questions extends MY_Controller {
 							$redirectUrl .= '&error=Question already exist.';
 						} else {*/
 							//Insert new record
+							fwrite($fp,'2 '.'question exist:');
+							fwrite($fp,print_r($checkQuestionExist,true));
 							$this->question->insertQuestionWithOption($optionData, $teacherId);
 							$redirectUrl .= '&success=Question data has been saved successfully.';
 						//}

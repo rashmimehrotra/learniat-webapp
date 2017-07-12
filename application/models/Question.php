@@ -210,6 +210,8 @@ class Question extends CI_Model {
 			'teacher_id' => $teacherId,
 			'question_name' => $questionName
 		);
+		$fp=fopen('saving.txt','w');
+		fwrite($fp,print_r($data));
 		$this->db->insert('questions', $data);
 		
 		return $this->db->insert_id();
@@ -229,7 +231,7 @@ class Question extends CI_Model {
                 $postData['topicId'],
                 $teacherId,
                 $postData['question']
-            );
+			);
 
             $questionOptionModel = $this->getQuestionOptionModel();
 

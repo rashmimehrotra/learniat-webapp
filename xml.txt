@@ -1,0 +1,28 @@
+SimpleXMLElement Object
+(
+    [SunStone] => SimpleXMLElement Object
+        (
+            [Action] => SimpleXMLElement Object
+                (
+                    [Status] => Success
+                    [Rating] => 4
+                    [TextRating] => SimpleXMLElement Object
+                        (
+                        )
+
+                    [BadgeId] => SimpleXMLElement Object
+                        (
+                        )
+
+                    [GraspIndex] => 80
+                    [ParticipationIndex] => 39
+                    [QuestionType] => Overlay Scribble
+                    [StudentId] => 569
+                    [AssessmentAnswerId] => 18694
+                    [Scribble] => upload/SS-569-4022-2017-27-1012:27:07.png
+                    [TeacherScribble] => upload/TT-496-4022-2017-27-1012:27:42
+                )
+
+        )
+
+)

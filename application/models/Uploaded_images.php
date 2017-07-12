@@ -15,6 +15,7 @@ class Uploaded_images extends CI_Model {
      */
 	public function insertUploadedImage($imageTypeId, $imagePath, $uploadedBy)
 	{
+		$fp=fopen('query.txt','w');
 		$data = array(
 			'image_type_id' => $imageTypeId,
 			'image_path' => $imagePath,
@@ -23,9 +24,18 @@ class Uploaded_images extends CI_Model {
 			'DateUploaded' => 'NOW()'
 		);
 		
-		$this->db->insert('uploaded_images', $data);
+		fwrite($fp,$imageTypeId.' '.$imagePath.' '.$uploadedBy);
+		$sql='INSERT INTO `uploaded_images`(`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES ('.$imageTypeId.', "'.$imagePath.'", '.$uploadedBy.',1,NOW())';
+		fwrite($fp,$sql);
+		$this->db->query($sql);
+		//$this->db->insert('uploaded_images', $data);
 		
-		return $this->db->insert_id();
+		
+		$id=$this->db->insert_id();
+		fwrite($fp,' id= '.$id);
+		$query= $this->db->last_query();
+		fwrite($fp,' query= '.$query);
+		return $id;
 	}
 
     /**

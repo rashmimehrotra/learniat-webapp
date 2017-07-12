@@ -1,0 +1,160 @@
+ERROR - 2017-07-07 13:55:54 --> Severity: Notice --> Undefined variable: fwrite /var/www/learniat_dev/application/controllers/session/Answer.php 32
+ERROR - 2017-07-07 13:55:54 --> Severity: Error --> Function name must be a string /var/www/learniat_dev/application/controllers/session/Answer.php 32
+ERROR - 2017-07-07 14:50:59 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:50:59 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:50:59 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:50:59 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:50:59 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:09 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:09 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:09 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:09 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:09 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:27 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:27 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:27 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:27 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:27 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:39 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:39 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:39 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:39 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:51:39 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:53:23 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:53:23 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:53:23 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:53:23 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:53:23 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:54:13 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:54:13 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:54:13 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:54:13 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:54:13 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:54:17 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:54:17 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:54:17 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:54:17 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:54:17 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:56:55 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:56:55 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:56:55 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:56:55 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:56:55 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:58:41 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:58:41 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:58:41 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:58:41 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 14:58:41 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 29
+ERROR - 2017-07-07 15:01:41 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:01:41 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:01:41 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:01:41 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:01:41 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:02:18 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:02:18 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:02:18 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:02:18 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:02:18 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:02:20 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:02:20 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:02:20 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:02:20 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:02:20 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:03:22 --> Severity: 4096 --> Object of class stdClass could not be converted to string /var/www/learniat_dev/application/views/answer/mtc.php 15
+ERROR - 2017-07-07 15:03:22 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:03:22 --> Severity: 4096 --> Object of class stdClass could not be converted to string /var/www/learniat_dev/application/views/answer/mtc.php 15
+ERROR - 2017-07-07 15:03:22 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:03:22 --> Severity: 4096 --> Object of class stdClass could not be converted to string /var/www/learniat_dev/application/views/answer/mtc.php 15
+ERROR - 2017-07-07 15:03:22 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:03:22 --> Severity: 4096 --> Object of class stdClass could not be converted to string /var/www/learniat_dev/application/views/answer/mtc.php 15
+ERROR - 2017-07-07 15:03:22 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:03:22 --> Severity: 4096 --> Object of class stdClass could not be converted to string /var/www/learniat_dev/application/views/answer/mtc.php 15
+ERROR - 2017-07-07 15:03:22 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 30
+ERROR - 2017-07-07 15:06:17 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at /var/www/learniat_dev/application/controllers/session/Answer.php:56) /var/www/learniat_dev/system/core/Common.php 569
+ERROR - 2017-07-07 15:06:17 --> Severity: Error --> Call to undefined function var_ump() /var/www/learniat_dev/application/views/answer/mtc.php 14
+ERROR - 2017-07-07 15:06:36 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 31
+ERROR - 2017-07-07 15:06:36 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 31
+ERROR - 2017-07-07 15:06:36 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 31
+ERROR - 2017-07-07 15:06:36 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 31
+ERROR - 2017-07-07 15:06:36 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 31
+ERROR - 2017-07-07 15:07:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:07:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:07:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:07:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:07:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:28 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:28 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:28 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:28 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:28 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:31 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:31 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:31 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:31 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:31 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:10:33 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:00 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:00 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:00 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:00 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:00 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:03 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:03 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:03 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:03 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:03 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 15:11:24 --> Severity: Warning --> Invalid argument supplied for foreach() /var/www/learniat_dev/application/views/answer/mtc.php 32
+ERROR - 2017-07-07 18:06:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:06:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:06:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 42
+ERROR - 2017-07-07 18:06:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-07 18:34:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:34:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:34:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 42
+ERROR - 2017-07-07 18:34:44 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-07 18:35:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:35:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:35:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 42
+ERROR - 2017-07-07 18:35:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-07 18:35:17 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:35:17 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:35:17 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 42
+ERROR - 2017-07-07 18:35:17 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-07 18:36:15 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:36:15 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:36:15 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 42
+ERROR - 2017-07-07 18:36:15 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-07 18:45:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:45:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:45:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 42
+ERROR - 2017-07-07 18:45:42 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-07 18:46:56 --> Severity: Parsing Error --> syntax error, unexpected ';' /var/www/learniat_dev/application/libraries/services/External.php 117
+ERROR - 2017-07-07 18:47:18 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-07 18:47:18 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-07 18:47:18 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 42
+ERROR - 2017-07-07 18:47:18 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-07 18:51:30 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-07 18:51:30 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-07 18:51:30 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 42
+ERROR - 2017-07-07 18:51:30 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-07 18:51:47 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-07 18:51:47 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-07 18:51:47 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 42
+ERROR - 2017-07-07 18:51:47 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-07-07 18:53:45 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-07 18:53:45 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 118
+ERROR - 2017-07-07 18:53:45 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 42
+ERROR - 2017-07-07 18:53:45 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9

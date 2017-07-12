@@ -19,8 +19,8 @@ class Answer extends MY_Controller {
 		$studentId = $this->input->get('studentId');
 		$this->load->model('question_log');
 		$answerDetails = $this->question_log->getQuestionAnswerData($questionId, $studentId, $sessionId);
-		//////var_dump($answerDetails);
-		//////var_dump('-----------------------------------------------------------');
+		var_dump($answerDetails);
+		var_dump('-----------------------------------------------------------');
         if (empty($answerDetails)) {
             echo 'No answer details found.';
             exit;
@@ -28,15 +28,13 @@ class Answer extends MY_Controller {
 		$this->load->library('services/External', '','externalService');
 		$assessmentAnswerId = $answerDetails->assessment_answer_id;
 		$pageUrl = $this->externalService->getAssessmentAnswerData($assessmentAnswerId);
-		////var_dump($res);
-		
 		$fp=fopen('/var/www/learniat_dev/url.txt','w');
-		fwrite($fp,$pageUrl);
+		$fwrite($fp,$pageUrl);
 		$this->load->library('curl');
 		$result = $this->curl->simple_get($pageUrl);
-		////var_dump('---------------------------------------------------------------------------');
-		////var_dump($result);
-		//////var_dump('---------------------------------------------------------------------------');
+		var_dump('---------------------------------------------------------------------------');
+		var_dump($result);
+		var_dump('---------------------------------------------------------------------------');
 		
 		$assessmentAnswerData = $this->externalService->xmlToObject($result); // 
 
@@ -53,9 +51,9 @@ class Answer extends MY_Controller {
 			'questionOptionData' => $questionOptionData,
 			'questionScribble' => $questionScribble
 		);
-		//////var_dump($assessmentAnswerData);
-		//////var_dump('---------------------------------------------------------------------------');
-		//////var_dump($data);
+		var_dump($assessmentAnswerData);
+		var_dump('---------------------------------------------------------------------------');
+		var_dump($data);
 		$this->load->view('answer/index', $data);
 		
 	}

@@ -151,8 +151,9 @@ class Class_session extends CI_Model {
     		$sessionSummaryDetails["students_present"] = $occupiedSeats;
     		$sessionSummaryDetails["topics_count"] = $taggedCount;
     		$sessionSummaryDetails["question_count"] = $question_count;
-    		$sessionSummaryDetails["start_time"] = $this->getTimeFormat($this->ReturnTimeOffset($classInfoDetails->starts_on));
-    		$sessionSummaryDetails["end_time"] = $this->getTimeFormat($this->ReturnTimeOffset($classInfoDetails->ends_on));
+    		$sessionSummaryDetails["start_time"] = $this->getTimeFormat($classInfoDetails->starts_on);
+    		$sessionSummaryDetails["end_time"] = $this->getTimeFormat($classInfoDetails->ends_on);
+    		//$sessionSummaryDetails["end_time"] = $this->getTimeFormat($this->ReturnTimeOffset($classInfoDetails->ends_on));
     		$sessionSummaryDetails["room_name"] = $classInfoDetails->room_name;
     		$sessionSummaryDetails["session_state"] = $classInfoDetails->session_state;
     		$sessionSummaryDetails["class_id"] = $classId;

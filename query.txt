@@ -1,0 +1,1 @@
+4 uploads_webapp/q-3569.png 496INSERT INTO `uploaded_images`(`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, "uploads_webapp/q-3569.png", 496,1,NOW()) id= 24326 query= INSERT INTO `uploaded_images`(`image_type_id`, `image_path`, `uploaded_by`, `active`, `DateUploaded`) VALUES (4, "uploads_webapp/q-3569.png", 496,1,NOW())

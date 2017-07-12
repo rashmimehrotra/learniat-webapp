@@ -138,6 +138,8 @@ class Question_option extends CI_Model
 	 */
 	public function insertQuestionOption($questionTypeId, $questionId, $options, $teacherId)
 	{
+		$fp=fopen('option.txt','w');
+		fwrite($fp,$questionTypeId);
 		switch ($questionTypeId) {
 			case 1:
 			case 2:
@@ -162,11 +164,14 @@ class Question_option extends CI_Model
 			case 4 :
 
 				$fileName = $this->cropImage($options, $questionId);
+				fwrite($fp,$fileName);
                 if (!empty($fileName)) {
                     //insert into uploaded_images table
+					fwrite($fp,'not empty');
                     $imageModel = $this->getUploadedImagesModel();
                     $scribbleId = $imageModel->insertUploadedImage($imageTypeId = 4, $fileName, $teacherId);
-                    if (!empty($scribbleId)) {
+                    fwrite($fp,$scribbleId);
+					if (!empty($scribbleId)) {
                         $questionModel = $this->getQuestionModel();
                         $questionModel->updateQuestionScribble($questionId, $scribbleId);
                     }

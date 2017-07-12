@@ -1,0 +1,4 @@
+ERROR - 2017-07-10 02:26:03 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3548.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24253'
+ERROR - 2017-07-10 02:34:21 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3548.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24253'
