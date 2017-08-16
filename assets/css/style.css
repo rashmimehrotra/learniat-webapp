@@ -1196,6 +1196,7 @@ button.navbar-toggle {
     border-radius: 10%;
     height: 47px;
     width: 47px;
+	margin-left:-3px;
 }
 .profilePic40 {
     border-radius: 10%;
@@ -1237,7 +1238,7 @@ footer .footer-links a:last-child {
 }
 .heading_cont {
     background: #ededed none repeat scroll 0 0;
-    padding: 10px;
+    padding: 4px;
 }
 .p1 {
     color: #444;
@@ -1455,7 +1456,7 @@ footer .footer-links a:last-child {
 .lesson-progress-bar {
     float: right;
     font-size: 10px;
-    margin: 13px 0;
+   /* margin: 13px 0;*/
     padding-top: 2px;
     width: 200px;
 }
@@ -1468,6 +1469,7 @@ footer .footer-links a:last-child {
 .square-covered-before {
     background: #fde278 none repeat scroll 0 0;
     height: 10px;
+	width:10px;
 }
 .covered-in {
     background: #cc9900 none repeat scroll 0 0;
@@ -1479,6 +1481,7 @@ footer .footer-links a:last-child {
 .square-covered-in {
     background: #cc9900 none repeat scroll 0 0;
     height: 10px;
+	width:10px;
 }
 .tobe-covered {
     background: #dedede none repeat scroll 0 0;
@@ -1489,6 +1492,7 @@ footer .footer-links a:last-child {
 .square-tobe-covered {
     background: #ececec none repeat scroll 0 0;
     height: 10px;
+	width:10px;
 }
 .average-text {
     color: #016699;
@@ -1557,7 +1561,8 @@ footer .footer-links a:last-child {
     width: 38%;
 }
 .sess-bar-right-content {
-    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 .sess-bar-right .classdropdown {
     float: left;
@@ -1588,6 +1593,7 @@ footer .footer-links a:last-child {
 .session-summary-left {
     width: 200px;
     float: left;
+	padding-top:12px;
 }
 .session-summary-right {
     float: right;

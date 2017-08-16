@@ -430,7 +430,7 @@
  */
 .qtip-bootstrap { /** Taken from Bootstrap body */
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 12px;
 	color: #333333;
 	/** Taken from Bootstrap .popover */
 	padding: 1px;
