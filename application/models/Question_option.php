@@ -249,13 +249,16 @@ class Question_option extends CI_Model
         if (!empty($options['image-data'])) {
 
             $srcFile = $options['image-data'];
+			$fp=fopen('img-src.txt','w');
+			fwrite($fp,print_r($options,true));
+			//fwrite($fp,$srcFile);
             list($widthImg, $heightImg, $type) = getimagesize($srcFile);
-
+			fwrite($fp,print_r(getimagesize($srcFile),true));
             $optionWidth = (isset($options['w'])) ? $options['w'] : CROP_MIN_WIDTH;
             $optionHeight = (isset($options['h'])) ? $options['h'] : CROP_MIN_HEIGHT;
             $optionX = (isset($options['x'])) ? $options['x'] : 0;
             $optionY = (isset($options['y'])) ? $options['y'] : 0;
-
+			fwrite($fp,'  '.$optionX.'  ',$optionY.'  '.$optionWidth.' '.$optionHeight);
             switch ($type) {
                 case IMAGETYPE_GIF:
                     $image = imagecreatefromgif($srcFile);

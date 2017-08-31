@@ -5,7 +5,10 @@ SimpleXMLElement Object
             [Action] => SimpleXMLElement Object
                 (
                     [Status] => Success
-                    [Rating] => 4
+                    [Rating] => SimpleXMLElement Object
+                        (
+                        )
+
                     [TextRating] => SimpleXMLElement Object
                         (
                         )
@@ -14,13 +17,43 @@ SimpleXMLElement Object
                         (
                         )
 
-                    [GraspIndex] => 80
-                    [ParticipationIndex] => 39
-                    [QuestionType] => Overlay Scribble
-                    [StudentId] => 569
-                    [AssessmentAnswerId] => 18694
-                    [Scribble] => upload/SS-569-4022-2017-27-1012:27:07.png
-                    [TeacherScribble] => upload/TT-496-4022-2017-27-1012:27:42
+                    [GraspIndex] => 100
+                    [ParticipationIndex] => 33
+                    [QuestionType] => Match Columns
+                    [StudentId] => 521
+                    [AssessmentAnswerId] => 19308
+                    [OptionContainer] => SimpleXMLElement Object
+                        (
+                            [Option] => Array
+                                (
+                                    [0] => SimpleXMLElement Object
+                                        (
+                                            [OptionText] => 3
+                                            [Column] => 2
+                                            [Sequence] => 1
+                                            [OldSequence] => 1
+                                        )
+
+                                    [1] => SimpleXMLElement Object
+                                        (
+                                            [OptionText] => 1.8
+                                            [Column] => 2
+                                            [Sequence] => 2
+                                            [OldSequence] => 2
+                                        )
+
+                                    [2] => SimpleXMLElement Object
+                                        (
+                                            [OptionText] => 3/2
+                                            [Column] => 2
+                                            [Sequence] => 3
+                                            [OldSequence] => 3
+                                        )
+
+                                )
+
+                        )
+
                 )
 
         )

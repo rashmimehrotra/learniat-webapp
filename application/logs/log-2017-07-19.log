@@ -1,0 +1,5 @@
+ERROR - 2017-07-19 21:22:10 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat_dev/application/views/calendar/cal.php 65
+ERROR - 2017-07-19 21:27:02 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat_dev/application/views/calendar/cal.php 65
+ERROR - 2017-07-19 21:27:06 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat_dev/application/views/calendar/cal.php 65
+ERROR - 2017-07-19 21:27:09 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat_dev/application/views/calendar/cal.php 65
+ERROR - 2017-07-19 21:27:16 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat_dev/application/views/calendar/cal.php 65

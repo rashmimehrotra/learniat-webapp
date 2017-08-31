@@ -68,6 +68,7 @@ endif; ?>
                             <input type="hidden" id="y" name="y" />
                             <input type="hidden" id="w" name="w" />
                             <input type="hidden" id="h" name="h" />
+							<input type="hidden" id="option" value='0'/>
 
                         </td>
                     </tr>
@@ -136,13 +137,14 @@ endif; ?>
 
 
 
-	var canvas = document.getElementById('canvas');
+	
 	var canvasFlag=0;
     function readURL(input) {
+		var option;
         if (input.files && input.files[0]) {
             var reader = new FileReader();
 			$("#save").prop('disabled', false);
-			
+			var canvas = document.getElementById('canvas');
             reader.onload = function (e) {
                 var image = new Image();
                 image.src = e.target.result;
@@ -153,8 +155,8 @@ endif; ?>
                     var imageWidth = this.width;
                     var imageHeight = this.height;
 
-                    var imageWidthMin= <?php echo CROP_MIN_WIDTH; ?>;
-                    var imageHeightMin = <?php echo CROP_MIN_HEIGHT; ?>;
+                    var imageWidthMin=1024 <?php// echo CROP_MIN_WIDTH; ?>;
+                    var imageHeightMin =768 <?php echo CROP_MIN_HEIGHT; ?>;
 
                     var imageWidthMinRetina = <?php echo CROP_MIN_WIDTH_RETINA; ?>;
                     var imageHeightMinRetina = <?php echo CROP_MIN_HEIGHT_RETINA; ?>;
@@ -183,40 +185,176 @@ endif; ?>
 					  };
 					  
 					*/
-                    if (imageWidth < imageWidthMin || imageHeight < imageHeightMin) {
+					
+                    if (imageWidth < imageWidthMin && imageHeight < imageHeightMin) {
                         //If width of pic less than min required width
-						
-						
-						if(imageWidth>imageHeight*aspectRatio)
-						{
-					//		alert('the case');
-							dialogText = 'The height of this picture is smaller than the lowest size permitted i.e. ' + imageHeightMin +'.';
-							dialogWarning = 'If you upload it, it will <b>NOT</b> fill the entire width of a normal iPad screen';
 							document.getElementById('targetImgDiv').style.display='none';
-							canvasFlag=1;
-							var canvasWidth = imageWidth;
-							var canvasHeight = imageWidth / aspectRatio;
-						//	alert( canvasWidth+' '+canvas.width+' '+canvasHeight+' '+canvas.height);
-							canvas.width=canvasWidth;
-							canvas.height=canvasHeight;
-							var canvasContext = canvas.getContext('2d');
-							var yOffset = imageHeight < canvas.height ? ((canvas.height - imageHeight) / 2) : 0;
-							//alert( canvasWidth+' '+canvas.width+' '+canvasHeight+' '+canvas.height);
-							//alert(yOffset);
+							dialogText = 'The dimensions of this image is lower than the minimum allowed dimensions i.e. ' + imageHeightMin +' x '+imageWidthMin+'.';
+							dialogWarning = 'If you upload it, it will <b>NOT</b> fill the entire width of a normal iPad screen';
+							$('#x').val(0);
+							$('#y').val(0);
+							$('#w').val(0);
+							$('#h').val(0);
+							var widthDiff = imageWidthMin - imageWidth;
+							var HeightDiff = imageHeightMin - imageHeight;
+							if(imageWidth>imageHeight)
+							{
+								canvasFlag=1;
+								var widthPerc = imageWidthMin/imageWidth;
+								//var canvasWidth = ;
+								//var canvasHeight = imageWidth / aspectRatio;
+							//	alert( canvasWidth+' '+canvas.width+' '+canvasHeight+' '+canvas.height);
+								canvas.width=imageWidthMin;
+								canvas.height=imageHeightMin;
+								$('#x').val(0);
+								$('#y').val(0);
+								$('#w').val(canvas.width);
+								$('#h').val(canvas.height);
+								var canvasContext = canvas.getContext('2d');
+								//alert(imageWidth+' '+canvas.width);
+								//alert(document.getElementById("option").value);
+								$('#dialog-question-crop-text').html(dialogText);
+								$('#dialog-question-crop-warning').html(dialogWarning);
+								var dialog = $("#dialog-question-crop").dialog({
+									resizable: true,
+									modal: true,
+									draggable: false,
+									closeOnEscape: true,
+									title: "Warning:",
+									async: false,
+									height: 250,
+									width: 550,
+									close: function( event, ui ) {
+										$("body").css("overflow", "auto");
+									},
+									create: function( event, ui ) {
+										$("body").css("overflow", "hidden");
+									},
+									buttons: {
+										"Resize and upload": function () {
+											var newHeight=imageHeight * widthPerc;
+											var yOffset = newHeight < canvas.height ? ((canvas.height - newHeight) / 2) : 0;
+											canvasContext.drawImage(image,x=0, y=yOffset, width=imageWidthMin, height=newHeight);
+											canvasContext.fillStyle = "black";
+											canvasContext.fillRect(0, 0, canvas.width,yOffset);
+											canvasContext.fillRect(0, yOffset+newHeight, canvas.width,yOffset);
+											$(this).dialog('close');
+										},
+										"Upload without resize": function () {
+											var yOffset = imageHeight < canvas.height ? ((canvas.height - imageHeight) / 2) : 0;
+											//alert(imageWidth+' '+canvas.width);
+											var xOffset = imageWidth < canvas.width ? ((canvas.width - imageWidth) / 2) : 0;
+											//alert(xOffset + ' ' +yOffset);
+											canvasContext.drawImage(image,x=xOffset, y=yOffset, width=imageWidth, height=imageHeight);
+											canvasContext.fillStyle = "black";
+											canvasContext.fillRect(0, 0, canvas.width,yOffset);
+											canvasContext.fillRect(0, yOffset+imageHeight, canvas.width,yOffset);
+											canvasContext.fillRect(0, 0, xOffset,canvas.height);
+											canvasContext.fillRect(xOffset+imageWidth,0,xOffset,canvas.height);
+											$(this).dialog('close');
+											
+										},
+										"Don't upload": function () {
+
+											$(this).dialog('close');
+											$('#targetImg').remove();
+											$("#save").prop('disabled', true);
+											//document.getElementById('save').disabled=true;
+											return false;
+										}
+									}
+								});
+								dialog.dialog( "open" );
+									
+								/* document.getElementById('targetImgDiv').style.display='none';
+								canvasFlag=1;
+								var canvasWidth = imageWidth;
+								var canvasHeight = imageWidth / aspectRatio;
+							//	alert( canvasWidth+' '+canvas.width+' '+canvasHeight+' '+canvas.height);
+								canvas.width=canvasWidth;
+								canvas.height=canvasHeight;
+								var canvasContext = canvas.getContext('2d');
+								var yOffset = imageHeight < canvas.height ? ((canvas.height - imageHeight) / 2) : 0;
+								//alert( canvasWidth+' '+canvas.width+' '+canvasHeight+' '+canvas.height);
+								//alert(yOffset);
+								
+								
+								canvasContext.drawImage(image,x=0, y=yOffset, width=imageWidth, height=imageHeight);
+								canvasContext.fillStyle = "black";
+								canvasContext.fillRect(0, 0, canvas.width,yOffset);
+								canvasContext.fillRect(0, yOffset+imageHeight, canvas.width,yOffset); */
+							}else /* if (imageWidth < imageHeight) */
+							{
+								canvasFlag=1;
+								var heightPerc = imageHeightMin/imageHeight;
+								//var canvasWidth = ;
+								//var canvasHeight = imageWidth / aspectRatio;
+							//	alert( canvasWidth+' '+canvas.width+' '+canvasHeight+' '+canvas.height);
+								canvas.width=imageWidthMin;
+								canvas.height=imageHeightMin;
+								var canvasContext = canvas.getContext('2d');
+								//alert(imageWidth+' '+canvas.width);
+								//alert(document.getElementById("option").value);
+								$('#dialog-question-crop-text').html(dialogText);
+								$('#dialog-question-crop-warning').html(dialogWarning);
+								var dialog = $("#dialog-question-crop").dialog({
+									resizable: true,
+									modal: true,
+									draggable: false,
+									closeOnEscape: true,
+									title: "Warning:",
+									async: false,
+									height: 250,
+									width: 550,
+									close: function( event, ui ) {
+										$("body").css("overflow", "auto");
+									},
+									create: function( event, ui ) {
+										$("body").css("overflow", "hidden");
+									},
+									buttons: {
+										"Resize and upload": function () {
+											var newWidth=imageWidth * heightPerc;
+											var xOffset = newWidth < canvas.width ? ((canvas.width - newWidth) / 2) : 0;
+											canvasContext.drawImage(image,x=xOffset, y=0, width=newWidth, height=imageHeightMin);
+											canvasContext.fillStyle = "black";
+											canvasContext.fillRect(0, 0, xOffset,canvas.height);
+											canvasContext.fillRect(xOffset+newWidth, 0, xOffset,canvas.height);
+											$(this).dialog('close');
+										},
+										"Upload without resize": function () {
+											var yOffset = imageHeight < canvas.height ? ((canvas.height - imageHeight) / 2) : 0;
+											//alert(canvas.width > imageWidth);
+											var value=(canvas.width - imageWidth) / 2;
+											//alert(value);
+											var xOffset = imageWidth < canvas.width ? value : 0;
+											//alert(xOffset + ' ' +yOffset);
+											canvasContext.drawImage(image,x=xOffset, y=yOffset, width=imageWidth, height=imageHeight);
+											canvasContext.fillStyle = "black";
+											canvasContext.fillRect(0, 0, canvas.width,yOffset);
+											canvasContext.fillRect(0, yOffset+imageHeight, canvas.width,yOffset);
+											canvasContext.fillRect(0, 0, xOffset,canvas.height);
+											canvasContext.fillRect(xOffset+imageWidth,0,xOffset,canvas.height);
+											$(this).dialog('close');
+											
+										},
+										"Don't upload": function () {
+
+											$(this).dialog('close');
+											$('#targetImg').remove();
+											$("#save").prop('disabled', true);
+											//document.getElementById('save').disabled=true;
+											return false;
+										}
+									}
+								});
+								dialog.dialog( "open" );
 							
 							
-							canvasContext.drawImage(image,x=0, y=yOffset, width=imageWidth, height=imageHeight);
-							canvasContext.fillStyle = "black";
-							canvasContext.fillRect(0, 0, canvas.width,yOffset);
-							canvasContext.fillRect(0, yOffset+imageHeight, canvas.width,yOffset);
-						}else if (imageWidth < imageHeight)
-						{
-						
-						
-						
-						}
-                        dialogText = 'The width of this picture is smaller than the lowest size permitted i.e. ' + imageWidthMin +'.';
-                        dialogWarning = 'If you upload it, it will <b>NOT</b> fill the entire width of a normal iPad screen';
+							}
+							
+                       /*  dialogText = 'The width of this picture is smaller than the lowest size permitted i.e. ' + imageWidthMin +'.';
+                        dialogWarning = 'If you upload it, it will <b>NOT</b> fill the entire width of a normal iPad screen'; */
 					// ahme edits
 						/*var canvasWidth = imageHeight * aspectRatio;
 						var canvasHeight = imageHeight;
@@ -251,7 +389,7 @@ endif; ?>
                     }
 
 
-                    if (dialogText.length > 0 ) {
+                 /*    if (dialogText.length > 0 ) {
 
                         $('#dialog-question-crop-text').html(dialogText);
                         $('#dialog-question-crop-warning').html(dialogWarning);
@@ -286,9 +424,9 @@ endif; ?>
                         });
 
                         dialog.dialog( "open" );
-                    }
+                    } */
 
-                    applyCropOnImage(imageWidthMin, imageHeightMin, imageWidth, imageHeight);
+                   // applyCropOnImage(imageWidthMin, imageHeightMin, imageWidth, imageHeight);
 
 
                 }

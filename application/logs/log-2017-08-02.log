@@ -1,0 +1,63 @@
+ERROR - 2017-08-02 20:01:45 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 20:01:45 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 20:01:45 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 20:01:45 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 20:01:45 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 20:01:45 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-08-02 20:01:45 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-08-02 20:28:46 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 20:28:46 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 20:28:46 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 20:28:46 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 20:28:46 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 20:28:46 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-08-02 20:28:46 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-08-02 22:20:09 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:09 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:09 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:20:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:20:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-08-02 22:20:09 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-08-02 22:20:14 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:14 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:14 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:20:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:20:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-08-02 22:20:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-08-02 22:20:58 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:58 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:58 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:58 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:20:58 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:20:58 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-08-02 22:20:58 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-08-02 22:20:58 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:58 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:58 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:20:58 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:20:58 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:20:58 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-08-02 22:20:58 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-08-02 22:22:12 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:22:12 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:22:12 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:22:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:22:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:22:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-08-02 22:22:12 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-08-02 22:22:14 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:22:14 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:22:14 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:22:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:22:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:22:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-08-02 22:22:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9
+ERROR - 2017-08-02 22:22:34 --> Severity: Warning --> simplexml_load_string(): Entity: line 1: parser error : Start tag expected, '&lt;' not found /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:22:34 --> Severity: Warning --> simplexml_load_string(): MySqlError - You have an error in your SQL syntax; check the manual that corresp /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:22:34 --> Severity: Warning --> simplexml_load_string(): ^ /var/www/learniat_dev/application/libraries/services/External.php 116
+ERROR - 2017-08-02 22:22:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:22:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/libraries/services/External.php 119
+ERROR - 2017-08-02 22:22:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/controllers/session/Answer.php 44
+ERROR - 2017-08-02 22:22:34 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat_dev/application/views/answer/index.php 9

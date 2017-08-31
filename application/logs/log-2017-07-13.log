@@ -1,0 +1,24 @@
+ERROR - 2017-07-13 04:47:07 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3570.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24327'
+ERROR - 2017-07-13 05:10:29 --> Severity: Notice --> Undefined variable: widthTmg /var/www/learniat_dev/application/models/Question_option.php 255
+ERROR - 2017-07-13 05:10:29 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 255
+ERROR - 2017-07-13 05:10:29 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 260
+ERROR - 2017-07-13 05:14:08 --> Severity: Notice --> Undefined variable: widthTmg /var/www/learniat_dev/application/models/Question_option.php 255
+ERROR - 2017-07-13 05:14:08 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 255
+ERROR - 2017-07-13 05:14:08 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 260
+ERROR - 2017-07-13 05:16:28 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 255
+ERROR - 2017-07-13 05:16:28 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 260
+ERROR - 2017-07-13 05:17:56 --> Severity: Notice --> Array to string conversion /var/www/learniat_dev/application/models/Question_option.php 255
+ERROR - 2017-07-13 05:17:56 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 260
+ERROR - 2017-07-13 05:17:56 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3573.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24330'
+ERROR - 2017-07-13 05:19:56 --> Severity: Parsing Error --> syntax error, unexpected ';' /var/www/learniat_dev/application/models/Question_option.php 256
+ERROR - 2017-07-13 05:20:46 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 261
+ERROR - 2017-07-13 05:20:46 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3573.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24330'
+ERROR - 2017-07-13 05:22:46 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 261
+ERROR - 2017-07-13 05:22:47 --> Query error: Incorrect datetime value: 'NOW()' for column 'DateUploaded' at row 1 - Invalid query: UPDATE `uploaded_images` SET `image_type_id` = 4, `image_path` = 'uploads_webapp/q-3573.png', `uploaded_by` = '496', `DateUploaded` = 'NOW()'
+WHERE `image_id` = '24330'
+ERROR - 2017-07-13 13:10:06 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 261
+ERROR - 2017-07-13 13:11:59 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 261
+ERROR - 2017-07-13 13:12:46 --> Severity: Notice --> A non well formed numeric value encountered /var/www/learniat_dev/application/models/Question_option.php 261
