@@ -34,7 +34,7 @@ class Login extends CI_Controller {
 		$this->form_validation->set_rules('username', 'username', 'required');
 		$this->form_validation->set_rules('password', 'password', 'required');
 
-		$this->form_validation->set_message('required', 'Please fill in the fields');
+		$this->form_validation->set_message('required', 'Please enter in the fields');
 
         if($this->form_validation->run() == FALSE) {
            	$form['error'] = "Please fill all fields";
@@ -47,7 +47,7 @@ class Login extends CI_Controller {
 			} else if($user == '3'){
 				redirect('/session/summary/index');
 			}else{
-				$form['error']="Username does not exists, please try again.";
+				$form['error']="Username does not exists in the learniat database, please try again.";
 				$this->load->view('login',$form);
 			}
         }
