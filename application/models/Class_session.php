@@ -36,7 +36,29 @@ class Class_session extends CI_Model {
 		$CI->load->model('student_class_map');
 		return $CI->student_class_map;
 	}
+	
+	public function get_web_page($url) {
+		$options = array(
+			CURLOPT_RETURNTRANSFER => true,   // return web page
+			CURLOPT_HEADER         => false,  // don't return headers
+			CURLOPT_FOLLOWLOCATION => true,   // follow redirects
+			CURLOPT_MAXREDIRS      => 10,     // stop after 10 redirects
+			CURLOPT_ENCODING       => "",     // handle compressed
+			CURLOPT_USERAGENT      => "test", // name of client
+			CURLOPT_AUTOREFERER    => true,   // set referrer on redirect
+			CURLOPT_CONNECTTIMEOUT => 120,    // time-out on connect
+			CURLOPT_TIMEOUT        => 120,    // time-out on response
+		); 
 
+		$ch = curl_init($url);
+		curl_setopt_array($ch, $options);
+
+		$content  = curl_exec($ch);
+
+		curl_close($ch);
+
+		return $content;
+	}
 	/**
 	 * Get all session id by user id
 	 * @param integer $userId
@@ -47,7 +69,7 @@ class Class_session extends CI_Model {
 	 */
 	public function getAllSessionIdByUserId($userId, $intervalDays = NULL, $classId = NULL, $sessionState = NULL)
 	{
-		$where = '';
+		/*$where = '';
 		if (!empty($sessionState)) {
 			$where = " AND term.session_state = $sessionState ";
 		}
@@ -71,8 +93,11 @@ class Class_session extends CI_Model {
 			order by term.starts_on desc";
 
 		$query = $this->db->query($queryText);
-		$result = $query->result();
-
+		$result = $query->result();*/
+		$response = $this->get_web_page("http://54.251.104.13:8100/list_sessions?teacher=".$userId);
+		$result = array();
+		$result = json_decode($response);
+		//print_r($result);
 		return $result;
 	}
 
@@ -216,12 +241,17 @@ class Class_session extends CI_Model {
 	 */
 	public function getClassesData($userId)
 	{
-		$classesSql = "SELECT DISTINCT cs.class_id,c.class_name
+		/*$classesSql = "SELECT DISTINCT cs.class_id,c.class_name
 		FROM class_sessions cs, classes c
 		WHERE cs.class_id=c.class_id and cs.teacher_id='$userId'";
 		$classesData = $this->db->query($classesSql)->result();
 
-		return $classesData;
+		return $classesData;*/
+		$response = $this->get_web_page("http://54.251.104.13:8100/list_classes?teacher=".$userId);
+		$result = array();
+		$result = json_decode($response);
+		//print_r($result);
+		return $result;
 	}
 
 	/**

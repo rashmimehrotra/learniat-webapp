@@ -44,7 +44,7 @@ class Student_class_map extends CI_Model
      */
     public function getSessionAttendedLiveStudentInfo($sessionId, $getNumRows = FALSE)
     {
-        $info = "SELECT user.first_name, user.last_name, user.user_id, states.state_description AS user_state
+       /* $info = "SELECT user.first_name, user.last_name, user.user_id, states.state_description AS user_state
         FROM student_class_map AS map
         INNER JOIN state_transitions AS st ON st.entity_id = map.student_id
 
@@ -62,6 +62,19 @@ class Student_class_map extends CI_Model
             $studentInfo = $this->db->query($info)->result();
         } else {
             $studentInfo = $this->db->query($info)->num_rows();
+        }
+
+        return $studentInfo;*/
+		$response = $this->get_web_page("http://54.251.104.13:8100/stud_list?session_id=".$sessionId);
+		$result = array();
+		$result = json_decode($response);
+		//print_r($result);
+		
+		//return 
+		if ($getNumRows === FALSE) {
+            $studentInfo = $result;
+        } else {
+            $studentInfo = count($result);
         }
 
         return $studentInfo;
@@ -121,6 +134,28 @@ class Student_class_map extends CI_Model
      * @param boolean $getNumRows
      * @return array $studentInfo
      */
+	 public function get_web_page($url) {
+		$options = array(
+			CURLOPT_RETURNTRANSFER => true,   // return web page
+			CURLOPT_HEADER         => false,  // don't return headers
+			CURLOPT_FOLLOWLOCATION => true,   // follow redirects
+			CURLOPT_MAXREDIRS      => 10,     // stop after 10 redirects
+			CURLOPT_ENCODING       => "",     // handle compressed
+			CURLOPT_USERAGENT      => "test", // name of client
+			CURLOPT_AUTOREFERER    => true,   // set referrer on redirect
+			CURLOPT_CONNECTTIMEOUT => 120,    // time-out on connect
+			CURLOPT_TIMEOUT        => 120,    // time-out on response
+		); 
+
+		$ch = curl_init($url);
+		curl_setopt_array($ch, $options);
+
+		$content  = curl_exec($ch);
+
+		curl_close($ch);
+
+		return $content;
+	}
     public function getAttendedStudentDetailsByClassId($classId, $getNumRows = FALSE)
     {
 
