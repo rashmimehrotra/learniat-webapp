@@ -15,9 +15,8 @@
                     <td>
                         <div class="question_txt">
                             <div class="question_list"><?php echo $key + 1; ?>.&nbsp;&nbsp;<?php echo $details->question_name;
-                            echo "<i><span style='font-size: 10px; margin-left:10px; color: #BDBDBD'>(".$details->question_id.")</span></i>";
                             echo '<br>';
-                            echo "<i><span style='font-size: 10px'>".$details->question_type_title."</span></i>";
+                            echo $details->question_type_title;
                              ?>
                             
                             </div>
@@ -57,9 +56,7 @@
                     </td>
                     <td style="width:18px;">
                         <?php
-                        if($details->logExists==0)
-                        {
-                            $title = "<table class='settingTopicOptions'>
+                        $title = "<table class='settingTopicOptions'>
                                 <tr onclick='showQuestionDiv($topicId, " . $details->question_id. ", true);'>
                                     <td>
                                         <img src='" . base_url('assets/images/plus.png') ."' class='addTopic'>
@@ -72,17 +69,6 @@
                                     </td>
                                     <td>Edit</td>
                                 </tr>";
-                        }
-                        else if($details->logExists>0)
-                        {
-                            $title = "<table class='settingTopicOptions'>
-                                <tr onclick='showQuestionDiv($topicId, " . $details->question_id. ", true);'>
-                                    <td>
-                                        <img src='" . base_url('assets/images/plus.png') ."' class='addTopic'>
-                                    </td>
-                                    <td >Duplicate</td>
-                                </tr>";
-                        }
 
                         if ($details->classAverageDataRows == 0) :
                             $title .= "<tr onclick='deleteQuestion(" . $topicId . ", " . $classId . ", " . $schoolId . ", " . $details->question_id . ", " . $parentTopicId . ");'>
@@ -118,20 +104,20 @@ $(document).ready(function()
 {
     $('.topicSetting').each(function() {
         $(this).qtip({
-            overwrite: true,
+        	overwrite: true,
             style: {
-               tip: {
-                   corner: true,
-                   width: 15,
-                   height: 10,
-                   border: 1,
-                   padding :0
-               },
-               classes: 'qtip-bootstrap'
-           },
-           show: {
-                //event: 'click'
-           },
+	           tip: {
+	               corner: true,
+	               width: 15,
+	               height: 10,
+	               border: 1,
+	               padding :0
+	           },
+	           classes: 'qtip-bootstrap'
+		   },
+		   show: {
+		   		//event: 'click'
+		   },
             position: {
                 my: 'top right',
                 at: 'bottom center',

@@ -111,7 +111,7 @@ class External
 	 * @param object $result stdClass
 	 */
 	public function xmlToObject($result)
-	{   
+	{
 		$xml = simplexml_load_string($result);
 		
 		return $xml->SunStone->Action;

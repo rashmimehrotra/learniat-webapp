@@ -30,7 +30,6 @@ class Answer extends MY_Controller {
 
 		$this->load->library('curl');
 		$result = $this->curl->simple_get($pageUrl);
-
 		$assessmentAnswerData = $this->externalService->xmlToObject($result);
 
 		$this->load->model('question_option');

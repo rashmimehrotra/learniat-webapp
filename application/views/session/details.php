@@ -29,9 +29,7 @@ $this->load->helper('form');
 							    <img src="<?php echo base_url('assets/images/back-arrow.png'); ?>">
 						    </button>
 						</a>
-	                    <h2 class="newh2"><?php echo $sessionDetails['class_name']; ?>
-                            <span style="font-size: 12px;color: grey;margin-left: 5px">[<?php echo $sessionDetails['sessionId'] ?>]</span>
-                        </h2>
+	                    <h2 class="newh2"><?php echo $sessionDetails['class_name']; ?></h2>
                     </div>
                     <div class="clear"></div>
                     <span class="session-detail-span">
@@ -144,10 +142,6 @@ $this->load->helper('form');
                                             <?php echo $topicData->topic_name; ?>
                                             <span style="padding-left: 10px;" class="subtopic-heading">
                                             (<?php echo $topicData->parent_topic_name; ?>)</span>
-                                            <?php
-                                                echo "<br>";
-                                                echo "<i><span style='font-size: 10px; margin-left:10px; color: #BDBDBD'>(".$topicData->topic_id.")</span></i>";
-                                            ?>
                                       	</div>
 
                                       	<div class="middleAccordTitle">

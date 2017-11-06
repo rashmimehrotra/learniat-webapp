@@ -98,9 +98,6 @@
             		<td colspan="2">
             			<div class="student_query_txt">
                 			<p><?php echo $details->query_text; ?></p>
-                      <?php
-                        echo "<i><span style='font-size: 10px; margin-left:10px; color: #BDBDBD'>(".$details->query_id.")</span></i>";
-                      ?>
             			</div>
             		</td>
             	</tr>

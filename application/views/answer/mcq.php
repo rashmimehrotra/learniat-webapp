@@ -8,8 +8,8 @@
 	    	</div>
 	   </td>
   	</tr>
-    <?php
-    $optionData = is_array($assessmentAnswerData->Options->Option)?$assessmentAnswerData->Options->Option:$assessmentAnswerData->OptionContainer->Option;
+    <?php 
+  	$optionData = $assessmentAnswerData->Options->Option;
   	$isAnswer = $assessmentAnswerData->IsAnswer;
   	foreach ($questionOptionData AS $key => $option) :
         $tdStyle = '';

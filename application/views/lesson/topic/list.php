@@ -58,10 +58,6 @@ foreach ($parentTopicData AS $key => $topicDetails) :
                             );
                         ?>
                         &nbsp;(<?php echo $otherDetails->cumulativeTime; ?>)
-                        <?php
-                            echo "<br>";
-                            echo "<i><span style='font-size: 10px; margin-left:10px; color: #BDBDBD'>(".$topicDetails->topic_id.")</span></i>";
-                        ?>
 						
 						
 					</td>

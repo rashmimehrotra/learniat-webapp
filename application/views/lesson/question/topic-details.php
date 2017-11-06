@@ -49,10 +49,6 @@
                         <td class="titleTopicText" style="vertical-align:middle;">
                             <span class="less-subj-tittle"><?php echo $parentTopicData->topic_name; ?></span>
                             &nbsp;<span class="lesson-sub-cmt">(<?php echo $otherDetails->cumulativeTime; ?>)</span>
-                            <?php
-                                echo "<br>";
-                                echo "<i><span style='font-size: 10px; margin-left:10px; color: #BDBDBD'>(".$parentTopicData->topic_id.")</span></i>";
-                            ?>
                         </td>
                         <td style="width: 10%;"> <td>
                         <td style="width: 30%;">

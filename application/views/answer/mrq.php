@@ -10,8 +10,7 @@
   	</tr>
   	
   	<?php 
-#  	$optionData = $assessmentAnswerData->Options->Option; changed line of Harut included, hence commented this line (sanjmeh)
-$optionData = is_array($assessmentAnswerData->Options->Option)?$assessmentAnswerData->Options->Option:$assessmentAnswerData->OptionContainer->Option;
+  	$optionData = $assessmentAnswerData->Options->Option;
   	foreach ($questionOptionData AS $key => $option) :
         $tdStyle = '';
   		if($key > 0) {

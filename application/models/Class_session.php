@@ -49,26 +49,28 @@ class Class_session extends CI_Model {
 	{
 		$where = '';
 		if (!empty($sessionState)) {
-			$where = " AND term.session_state = $sessionState ";
+			$where = " AND cs.session_state = $sessionState ";
 		}
 
 		if (!empty($intervalDays)) {
-			$where = " AND term.ends_on < NOW() AND term.ends_on > (NOW() - INTERVAL $intervalDays DAY) ";
+			$where = " AND cs.ends_on < NOW() AND cs.ends_on > (NOW() - INTERVAL $intervalDays DAY) ";
 		}
 
 		if (!empty($classId)) {
-			$where = " AND term.class_id = $classId";
+			$where = " AND cs.class_id = $classId";
 		}
 
-		$queryText = "select term.class_session_id, term.ends_on, class.class_name
-			from class_sessions as term
-			inner join tbl_auth as user on term.teacher_id = user.user_id
-			inner join classes as class on term.teacher_id = class.teacher_id
-			inner join rooms as room on term.room_id = room.room_id
-			inner join subjects as subject on subject.subject_id = class.subject_id
-			where term.teacher_id = '$userId' AND term.class_id = class.class_id
+		$queryText = "SELECT cs.class_session_id, cs.ends_on, c.class_name
+			from class_sessions as cs
+			INNER JOIN tbl_auth as user on cs.teacher_id = user.user_id
+			INNER JOIN classes as c on cs.teacher_id = c.teacher_id AND cs.class_id = c.class_id
+			INNER JOIN rooms as room on cs.room_id = room.room_id
+			INNER JOIN subjects as subject on subject.subject_id = c.subject_id
+			INNER JOIN topic_log as tl ON tl.transition_time between cs.starts_on and cs.ends_on
+			WHERE cs.teacher_id = '$userId'
 			$where
-			order by term.starts_on desc";
+			GROUP BY cs.class_session_id
+			ORDER  BY cs.starts_on desc";
 
 		$query = $this->db->query($queryText);
 		$result = $query->result();
@@ -85,11 +87,12 @@ class Class_session extends CI_Model {
 	public function getSessionSummaryDetails($sessionId, $sessionDate)
 	{
 		$classInfoSql = "SELECT cs.class_id, cs.starts_on, cs.ends_on,
-		cs.session_state, rm.room_name, class.class_name
+		cs.session_state, rm.room_name, c.class_name
 		FROM class_sessions AS cs
-		INNER JOIN classes as class on cs.class_id = class.class_id
+		INNER JOIN classes as c on cs.class_id = c.class_id
+		INNER JOIN topic_log as tl ON tl.transition_time between cs.starts_on and cs.ends_on
 		INNER JOIN rooms as rm on rm.room_id = cs.room_id
-		WHERE cs.class_session_id = '$sessionId' AND cs.ends_on >= '$sessionDate'";
+		WHERE class_session_id = '$sessionId' AND cs.ends_on >= '$sessionDate'";
 		$classInfoDetails = $this->db->query($classInfoSql)->row();
 
 		$sessionSummaryDetails = array();
@@ -136,8 +139,10 @@ class Class_session extends CI_Model {
             		AND topic_log.class_id=class_sessions.class_id
             		AND class_sessions.class_session_id='$sessionId' ";
     		$topicCoveredPastSql = $topicSql . " AND (topic_log.transition_time < class_sessions.starts_on)";
-    		$topicCoveredSql = $topicSql . " AND (topic_log.transition_time > class_sessions.starts_on)
-		              AND (topic_log.transition_time > class_sessions.ends_on)";
+    		/*$topicCoveredSql = $topicSql . " AND (topic_log.transition_time > class_sessions.starts_on)
+		              AND (topic_log.transition_time > class_sessions.ends_on)";*/
+
+			$topicCoveredSql = "SELECT DISTINCT topic_id  FROM student_index WHERE class_session_id = $sessionId";
 
     		$toBeCoveredSql = "SELECT count(topic_id)  AS totalCount FROM lesson_plan,class_sessions
             	WHERE topic_tagged=1 and lesson_plan.class_id = class_sessions.class_id
@@ -151,8 +156,8 @@ class Class_session extends CI_Model {
     		$sessionSummaryDetails["students_present"] = $occupiedSeats;
     		$sessionSummaryDetails["topics_count"] = $taggedCount;
     		$sessionSummaryDetails["question_count"] = $question_count;
-    		$sessionSummaryDetails["start_time"] = $this->getTimeFormat($this->ReturnTimeOffset($classInfoDetails->starts_on));
-    		$sessionSummaryDetails["end_time"] = $this->getTimeFormat($this->ReturnTimeOffset($classInfoDetails->ends_on));
+    		$sessionSummaryDetails["start_time"] = $this->getTimeFormat($this->returnTimeOffset($classInfoDetails->starts_on));
+    		$sessionSummaryDetails["end_time"] = $this->getTimeFormat($this->returnTimeOffset($classInfoDetails->ends_on));
     		$sessionSummaryDetails["room_name"] = $classInfoDetails->room_name;
     		$sessionSummaryDetails["session_state"] = $classInfoDetails->session_state;
     		$sessionSummaryDetails["class_id"] = $classId;
@@ -179,7 +184,7 @@ class Class_session extends CI_Model {
 	}
 
 	//TODO : NOT USED ANY WHERE
-	public function ReturnTimeOffset($startTime=null, $schoolId = 2)
+	public function returnTimeOffset($startTime=null, $schoolId = 2)
 	{
 		$get_time = "SELECT TIME_TO_SEC(timezone) as time FROM schools where school_id=2 or school_id=3";
 		$time = $this->db->query($get_time)->row();
@@ -216,7 +221,9 @@ class Class_session extends CI_Model {
 	public function getClassesData($userId)
 	{
 		$classesSql = "SELECT DISTINCT cs.class_id,c.class_name
-		FROM class_sessions cs, classes c
+		FROM class_sessions cs
+		INNER JOIN classes as c on c.class_id=cs.class_id
+		INNER JOIN topic_log as tl on tl.transition_time between cs.starts_on and cs.ends_on
 		WHERE cs.class_id=c.class_id and cs.teacher_id='$userId'";
 		$classesData = $this->db->query($classesSql)->result();
 
@@ -231,13 +238,12 @@ class Class_session extends CI_Model {
 	 */
 	public function getTopicList($sessionId)
 	{
-	    $classesSql = "SELECT DISTINCT t.topic_id, t.topic_name, cs.class_session_id,
+	    $classesSql = "SELECT t.topic_id, t.topic_name,
 	    t1.topic_id AS parent_topic_id, t1.topic_name AS parent_topic_name
         FROM class_sessions AS cs
         INNER JOIN lesson_plan AS lp ON lp.class_id=cs.class_id
         INNER JOIN topic AS t ON t.topic_id=lp.topic_id AND t.parent_topic_id IS NOT NULL
         LEFT JOIN topic AS t1 ON t1.topic_id=t.parent_topic_id
-        INNER JOIN student_index AS si ON si.topic_id=t.topic_id AND si.class_session_id='$sessionId'
         WHERE cs.class_session_id = '$sessionId'";
 	    $classesData = $this->db->query($classesSql)->result();
 
@@ -280,14 +286,14 @@ class Class_session extends CI_Model {
 		$dto->modify('+' . CALENDER_DAYS . ' days');
 		$toDate = $dto->format('Y-m-d');
 		
-		$classesSql = "SELECT sub.subject_name, class.class_name, term.class_session_id, term.starts_on,
-		 term.ends_on, term.teacher_id, term.class_id, class.subject_id, room.room_name,
-		 room.room_id, term.session_state 
-		FROM class_sessions as term 
-		INNER JOIN classes as class on term.class_id=class.class_id
-		INNER JOIN rooms as room on term.room_id=room.room_id
-		INNER JOIN subjects as sub on class.subject_id=sub.subject_id
-		WHERE term.starts_on between '$fromDate 00:00:00' and '$toDate 23:59:59' and term.teacher_id='$teacherId'";
+		$classesSql = "SELECT sub.subject_name, c.class_name, cs.class_session_id, cs.starts_on,
+		 cs.ends_on, cs.teacher_id, cs.class_id, c.subject_id, room.room_name,
+		 room.room_id, cs.session_state
+		FROM class_sessions as cs
+		INNER JOIN classes as c on cs.class_id=c.class_id
+		INNER JOIN rooms as room on cs.room_id=room.room_id
+		INNER JOIN subjects as sub on c.subject_id=sub.subject_id
+		WHERE cs.starts_on between '$fromDate 00:00:00' and '$toDate 23:59:59' and cs.teacher_id='$teacherId'";
 		
 		$classesData = $this->db->query($classesSql)->result();
 		
@@ -303,10 +309,10 @@ class Class_session extends CI_Model {
 	 */
 	public function getParentTopicListByTeacherId($classId, $rowCount = FALSE)
 	{
-		$classesSql = "SELECT t.topic_id, t.topic_name, t.topic_info, TIME(term.starts_on), TIME(term.ends_on)
+		$classesSql = "SELECT t.topic_id, t.topic_name, t.topic_info, TIME(cs.starts_on), TIME(cs.ends_on)
 		FROM topic AS t
 		INNER JOIN classes AS c ON c.subject_id=t.subject_id 
-		INNER JOIN class_sessions AS term ON term.teacher_id=c.teacher_id 
+		INNER JOIN class_sessions AS cs ON cs.teacher_id=c.teacher_id
 		WHERE t.parent_topic_id IS NULL AND c.class_id=$classId ";
 		$classesSql .= " GROUP BY t.topic_id";
 		
@@ -324,6 +330,7 @@ class Class_session extends CI_Model {
 	 *
 	 * @param integer $classId
 	 * @param integer $topicId
+     * @param boolean $rowCount
 	 * @return array|integer $classesData
 	 */
 	public function getSubTopicList($classId, $topicId, $rowCount = FALSE)
@@ -348,7 +355,7 @@ class Class_session extends CI_Model {
 	 *
 	 * @param integer $classId
 	 * @param integer $topicId
-	 * @return array|integer $classesData
+	 * @return array $classesData
 	 */
 	public function getSubTopicIdsList($classId, $topicId)
 	{

@@ -16,10 +16,7 @@
 			            <div class="question_list">
                              <span class="cursorPointer"
                                  onclick="getStudentQuestionPopupScreen(<?php echo $details->question_id; ?>, <?php echo $sessionId; ?>)">
-                                <?php echo $key + 1; ?>.&nbsp;&nbsp;<?php echo $details->question_name; ?><?php
-                                    echo "<br>";
-                                    echo "<i><span style='font-size: 10px; margin-left:10px; color: #BDBDBD'>(".$details->question_id.")</span></i>";
-                                ?>
+                                <?php echo $key + 1; ?>.&nbsp;&nbsp;<?php echo $details->question_name; ?>
                              </span>
                         </div>
 			        </div>

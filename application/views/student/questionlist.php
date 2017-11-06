@@ -15,10 +15,6 @@
         		<td>
         			<div class="question_txt">
 			            <div class="question_list"><?php echo $key + 1; ?>.&nbsp;&nbsp;<?php echo $details->question_name; ?></div>
-                  <?php
-                    echo "<br>";
-                    echo "<i><span style='font-size: 10px; margin-left:10px; color: #BDBDBD'>(".$details->question_id.")</span></i>";
-                  ?>
 			        </div>
         		</td>
                 <?php if ($details->averageScoreOfClass > 0) : ?>

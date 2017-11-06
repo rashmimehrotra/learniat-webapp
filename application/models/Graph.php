@@ -1,16 +1,12 @@
 <?php
-require_once 'SunManagerConst.php';
-require_once ('SunXMLManager.php');
 class Graph extends CI_Model
 {
     const STUDENT_ATTENDED = 'attended';
     const STUDENT_LIVE = 'live';
     const STUDENT_DEFAULT = 'default';
-    private $mXMLManager;
 
 	public function __construct()
 	{
-		$this->mXMLManager = new SunXMLManager();
 		parent::__construct();
 	}
 	
@@ -91,7 +87,7 @@ class Graph extends CI_Model
 							$studentIndexDetails[$key]['studentFirstName'] = $studentRow->first_name;
 							$studentIndexDetails[$key]['studentLastName'] = $studentRow->last_name;
 							$studentIndexDetails[$key]['graspIndex'] = $this->getGraspIndex(null, $sessionId, $userId, null);
-							$studentIndexDetails[$key]['participationIndex'] = $this->getParticipationIndex2($sessionId, $userId,null,null);
+							$studentIndexDetails[$key]['participationIndex'] = $this->getParticipationIndex($sessionId, $userId);
 						}
 					}
 
@@ -111,7 +107,7 @@ class Graph extends CI_Model
 							$studentIndexDetails[$key]['studentFirstName'] = $studentRow->first_name;
 							$studentIndexDetails[$key]['studentLastName'] = $studentRow->last_name;
 							$studentIndexDetails[$key]['graspIndex'] = $this->getGraspIndex(null, $sessionId, $userId, $topicId);
-							$studentIndexDetails[$key]['participationIndex'] = $this->getParticipationIndex2($sessionId, $userId,$topicId,null);
+							$studentIndexDetails[$key]['participationIndex'] = $this->getParticipationIndex($sessionId, $userId);
 						}
 					}
 				} else {
@@ -217,109 +213,6 @@ class Graph extends CI_Model
 		} catch(Exception $e) {
 			return "error" . $e->getMessage();
 		}
-	}
-	
-	public function getCommonAPImodel()
-    {
-        $CI = &get_instance();
-        $CI->load->model('commonapi');
-        return $CI->commonapi;
-    }
-
-	public function getParticipationIndex2($sessionId = null, $studentId = null, $topicId = null, $classId = null)
-	{
-		//$commonapiModel=$this->getCommonAPImodel();
-		/*$class_s="select class_id from class_sessions where class_session_id='$sessionId'";
-		$class_q=$this->db->query($class_s);
-		$class_f=$class_q->row();
-		$class_id=$class_f->class_id;
-		echo $class_id;*/
-		if($sessionId!=null && $studentId!=null)
-		{
-			if($topicId!=null)
-			{
-				$index2="select student_pi from stud_topic_time where student_id='$studentId' and topic_id='$topicId' and class_session_id='$sessionId'";
-				$index_q2=$this->db->query($index2);
-				$index_f2=$index_q2->row();
-				if($index_f2)
-				{
-					$student_pi=$index_f2->student_pi;
-				}
-				else
-				{
-					$student_pi=0;
-				}
-				return $student_pi;
-			}
-			if($topicId==null)
-			{
-				$index2="select student_pi from stud_session_time where student_id='$studentId' and class_session_id='$sessionId'";
-				$index_q2=$this->db->query($index2);
-				$index_f2=$index_q2->row();
-				if($index_f2)
-				{
-					$student_pi=$index_f2->student_pi;
-				}
-				else
-				{
-					$student_pi=0;
-				}
-				return $student_pi;
-			}
-		}
-		if($studentId==null && $sessionId!=null)
-		{
-			if($topicId==null)
-			{
-				$index2="select pi from class_sessions where class_session_id='$sessionId'";
-				$index_q2=$this->db->query($index2);
-				$index_f2=$index_q2->row();
-				if($index_f2)
-				{
-					$sess_pi=$index_f2->pi;
-				}
-				else
-				{
-					$sess_pi=0;
-				}
-				return $sess_pi;
-			}
-			else
-			{
-				$index2="SELECT sum(student_pi) as topic_pi from stud_topic_time where class_session_id='$sessionId' and topic_id='$topicId' group by topic_id";
-				$index_q2=$this->db->query($index2);
-				$index_f2=$index_q2->row();
-				if($index_f2)
-				{
-					$topic_pi=$index_f2->topic_pi;
-				}
-				else
-				{
-					$topic_pi=0;
-				}
-				return $topic_pi;
-			}
-		}
-		if($studentId!=null && $topicId==null && $sessionId==null && $classId!=null)
-		{
-			$stud_s="select max(pi_class) as pi_class from stud_session_time inner join class_sessions on class_sessions.class_session_id=stud_session_time.class_session_id where student_id='$studentId' and class_id='$classId'";
-			$stud_q=$this->db->query($stud_s);
-			$stud_f=$stud_q->row();
-			if($stud_f)
-			{
-				$index2=$stud_f->pi_class;
-			}
-			else
-			{
-				$index2=0;
-			}
-			return $index2;
-		}
-		//$arr[SMC::$PARTICIPATIONINDEX]=$index_v2;
-		/*$participationIndex=$commonapiModel->GetIndex(2,$studentId,$class_id,$sessionId,$topicId,null,null);
-		$array2 = $this->mXMLManager->parseXML($participationIndex);
-		echo $array2[0][SMC::$PARTICIPATIONINDEX];*/
-		return 0;
 	}
 
 	/**
@@ -532,7 +425,7 @@ class Graph extends CI_Model
                 $maxEndTime[] =  (int) (date('H', strtotime($data->ends_on)));
 
 
-				$PI = $this->getParticipationIndex2($data->class_session_id,null,null,null);
+				$PI = $this->getParticipationIndex($data->class_session_id);
 				$timeTableData[$key]->averagePI = $PI;
 
                 //Occupied seats
@@ -607,7 +500,7 @@ class Graph extends CI_Model
             $studentIndexDetails[$key]['studentFirstName'] = ucfirst($studentRow->first_name);
             $studentIndexDetails[$key]['studentLastName'] = ucfirst($studentRow->last_name);
             $studentIndexDetails[$key]['graspIndex'] = $this->getGraspIndex(null, null, $userId, null);
-            $studentIndexDetails[$key]['participationIndex'] = $this->getParticipationIndex2(null, $userId,null,$classId);
+            $studentIndexDetails[$key]['participationIndex'] = $this->getParticipationIndex(null, $userId);
         }
 
         return $studentIndexDetails;

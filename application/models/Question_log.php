@@ -94,7 +94,7 @@ class Question_log extends CI_Model {
 			$sql .= " AND q.topic_id = $topicId  ";
 		}
 		$sql .= " GROUP BY ql.question_id";
-	
+		
 		if ($getCount === TRUE) {
 			$questionInfo = $this->db->query($sql)->num_rows();
 		} else {

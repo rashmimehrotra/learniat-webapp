@@ -48,10 +48,6 @@
                         );
                         ?>
                         &nbsp;<span class="lesson-sub-cmt" style="font-weight:400">(<?php echo $otherDetails->cumulativeTime; ?>)</span>
-                                <?php
-                                echo "<br>";
-                                echo "<i><span style='font-size: 10px; margin-left:10px; color: #BDBDBD'>(".$topicDetails->topic_id.")</span></i>";
-                                ?>
                     </td>
 
                     <td style="width: 11%;vertical-align:top;"> <td>

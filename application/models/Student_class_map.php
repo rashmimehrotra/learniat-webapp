@@ -19,9 +19,7 @@ class Student_class_map extends CI_Model
         INNER JOIN tbl_auth AS user ON user.user_id = map.student_id
         INNER JOIN entity_states AS states ON user.user_state = states.state_id
         INNER JOIN class_sessions AS session ON map.class_id = session.class_id
-        INNER JOIN stud_session_time ON stud_session_time.class_session_id=session.class_session_id
-        AND stud_session_time.student_id=map.student_id
-        WHERE session.class_session_id = '$sessionId'
+        WHERE session.class_session_id = $sessionId
         GROUP BY user.user_id
         ORDER BY user.first_name";
 
@@ -51,10 +49,8 @@ class Student_class_map extends CI_Model
         INNER JOIN tbl_auth AS user ON user.user_id = map.student_id
         INNER JOIN entity_states AS states ON user.user_state = states.state_id
         INNER JOIN class_sessions AS session ON map.class_id = session.class_id
-        INNER JOIN stud_session_time ON stud_session_time.class_session_id=session.class_session_id
-        AND stud_session_time.student_id=map.student_id
-        WHERE session.class_session_id = '$sessionId' AND from_state=1 and to_state=7
-        
+
+        WHERE session.class_session_id = $sessionId AND from_state=1 and to_state=7
         GROUP BY user.user_id
         ORDER BY user.first_name";
 

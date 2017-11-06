@@ -1,6 +1,0 @@
-ERROR - 2017-05-04 18:41:54 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
-ERROR - 2017-05-04 18:41:54 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
-ERROR - 2017-05-04 18:42:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
-ERROR - 2017-05-04 18:42:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
-ERROR - 2017-05-04 18:42:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24
-ERROR - 2017-05-04 18:42:14 --> Severity: Notice --> Trying to get property of non-object /var/www/learniat/application/views/answer/mcq.php 24

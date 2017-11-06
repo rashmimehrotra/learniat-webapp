@@ -86,25 +86,23 @@ class Questions extends MY_Controller {
 							&& ($optionData['duplicate'] === 'false' || $optionData['duplicate'] === false)) {
 						
 						$checkQuestionExist = $this->question->checkQuestionExist($optionData['question'], $optionData['questionId']);
-						#************CHANGES START ********
-						/*if ($checkQuestionExist) {
+						if ($checkQuestionExist) {
 							$redirectUrl .= '&error=Question already exist.';
 						} else {
-							//update new record*/
+							//update new record
 							$this->question->updateQuestionWithOption($optionData['questionId'], $optionData, $teacherId);
 							$redirectUrl .= '&success=Question data has been saved successfully.';
-						//}
+						}
 					} else {
 
 						$checkQuestionExist = $this->question->checkQuestionExist($optionData['question']);
-						/*if ($checkQuestionExist) {
+						if ($checkQuestionExist) {
 							$redirectUrl .= '&error=Question already exist.';
-						} else {*/
+						} else {
 							//Insert new record
 							$this->question->insertQuestionWithOption($optionData, $teacherId);
 							$redirectUrl .= '&success=Question data has been saved successfully.';
-						//}
-						# ************CHANGES END ********
+						}
 					}
 				}
 			} catch (Exception $e) {

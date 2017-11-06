@@ -108,18 +108,8 @@ class Question extends CI_Model {
 		} else {
 			$questionInfo = $this->db->query($sql)->result();
 		}
-		//print_r($questionInfo);
+	
 		return $questionInfo;
-	}
-
-	public function checkQuestionlog($questionId)
-	{
-		$checkQuestionlog="select question_log_id from question_log where question_id='$questionId'";
-		$QuestionlogQueryRes=$this->db->query($checkQuestionlog)->result();
-		$logExists=$this->db->query($checkQuestionlog)->num_rows();
-		//$QuestionlogQueryNum=new stdClass();
-		//$QuestionlogQueryNum->logExists=$logExists;
-		return $logExists;
 	}
 	
 	/**
@@ -132,12 +122,9 @@ class Question extends CI_Model {
 	{
 		$questionData = $this->getTopicQuestionData($classId, $topicId);
 		$questionLogModel = $this->getQuestionLogModel();
-		
 		foreach ($questionData AS $key => $data) {
 			$classAverageData =  $questionLogModel->getClassAverageScore($data->question_id);
 			$classAverageDataRows =  $questionLogModel->getClassAverageScore($data->question_id, $getNumRows = TRUE);
-			$logExistsNum=$this->checkQuestionlog($data->question_id);
-			$questionData[$key]->logExists=$logExistsNum;
 
 			$questionData[$key]->averageScoreOfClass = 0;
 			$questionData[$key]->classAverageDataRows = $classAverageDataRows;

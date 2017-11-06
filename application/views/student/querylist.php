@@ -115,9 +115,6 @@ if($countVolunteerNotSelectedQuery > 0) : ?>
 		     	<td colspan="5">
                     <div class="student_txt">
 		                <p><?php echo $queryDetails->query_text; ?></p>
-		                <?php
-                        echo "<i><span style='font-size: 10px; margin-left:10px; color: #BDBDBD'>(".$queryDetails->query_id.")</span></i>";
-                      ?>
 		            </div>
                </td>
 	        </tr>

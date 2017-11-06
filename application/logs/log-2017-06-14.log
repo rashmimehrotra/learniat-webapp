@@ -1,7 +1,0 @@
-ERROR - 2017-06-14 04:02:59 --> Severity: Notice --> Undefined variable: averageParticipationIndexPosition /var/www/learniat/application/views/calendar/cal.php 65
-ERROR - 2017-06-14 13:07:46 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
-ERROR - 2017-06-14 13:07:46 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
-ERROR - 2017-06-14 13:07:50 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
-ERROR - 2017-06-14 13:07:50 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135
-ERROR - 2017-06-14 13:07:51 --> Severity: Notice --> Undefined variable: sessionIdentity /var/www/learniat/application/views/session/summary.php 134
-ERROR - 2017-06-14 13:07:51 --> Severity: Notice --> Undefined variable: sessionProcess /var/www/learniat/application/views/session/summary.php 135

@@ -1,5 +1,5 @@
 <?php $score = sprintf("%1\$.0f", $answerDetails->answer_score_percent); ?>
-<table class='exp-popup'>
+<table class='exp-popup' width='300px'>
 	<tr>
 	    <td style='border: none;'>
 	    	<div class='popup-std-reply'>
@@ -21,7 +21,7 @@
 					?>
 						<img src="<?php echo $questionScribbleImage; ?>"
 							 tyle="position: relative; top: 0; left: 0;"
-						 	 width="250">
+						 	 width="250" height="150">
 					<?php 
 						endif;
 					endif;
@@ -38,7 +38,7 @@
 					?>
 						<img src="<?php echo $scribble; ?>"
 							 style="<?php echo $absoluteStyle; ?>;left: 0; top: 0;"
-							width="250">
+							width="250" height="150">
 					<?php
                         //endif;
                     endif;
@@ -54,7 +54,7 @@
 					?>
 						<img src="<?php echo $teacherScribble; ?>"
 							 style="position:absolute;left: 0; top: 0;"
-							width="250">
+							width="250" height="150">
 					<?php
                             //endif;
 						endif;
